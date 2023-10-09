@@ -132,10 +132,16 @@ tw-sidebar {
 
 
 
-.hud-pic {
+.hud-sun {
   position: absolute;
   z-index: 2;
-  margin: -335px 0px 0px -510px;
+  margin: -400px 0px 0px -510px;
+}
+
+.hud-moon {
+  position: absolute;
+  z-index: 2;
+  margin: -450px 0px 0px -525px;
 }
 
 
@@ -171,7 +177,7 @@ tw-sidebar {
 .hud-text {
   position: absolute;
    z-index: 3;
-   margin: -315px 0px 0px -315px;
+   margin: -300px 0px 0px -315px;
 }
 
 .game-text {
@@ -355,41 +361,50 @@ p {
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="AlleywaySetup" tags="Setup" position="1350,1000" size="100,100">Loading 9/10
 
-(set: $AlleywaySetting1 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Empty Alleyway(set: $LastVisited to 9)
+(set: $AlleywaySetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Alleyway(set: $LastVisited to 9)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |AlleywaySetting&gt;[($Alleyway1:)]
 ]]))
 
-(set: $AlleywaySetting2 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Empty Alleyway(set: $LastVisited to 9)
+(set: $AlleywaySetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Alleyway(set: $LastVisited to 9)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |AlleywaySetting&gt;[($Alleyway2:)]
 ]]))
 
 
-(set: $AlleywaySetting3 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Empty Alleyway(set: $LastVisited to 9)
+(set: $AlleywaySetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Alleyway(set: $LastVisited to 9)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |AlleywaySetting&gt;[(if:$StoppedHorseNapping is false)[($Alleyway3:)](else:)[($Alleyway1:)]]
@@ -570,7 +585,17 @@ Abraham: Well acording to Tumble Town law, the person who declares the duel gets
 &lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SuperTextboxLand.png class=&quot;shopbox&quot; width=&quot;700&quot; height=&quot;850&quot;&gt;
 
 
-
+(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Gun Shop(set: $LastVisited to 10)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Gun Shop(set: $LastVisited to 10)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 The Best Gunsmith in Town(set: $LastVisited to 10)
@@ -690,14 +715,17 @@ $TimeLeft hours till the duel
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="HatShopSetup" tags="Setup" position="1350,750" size="100,100">Loading 3/10
 
-(set: $ShopSetting1 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Pat Smith&#39;s Hat Shop(set: $LastVisited to 2)
+(set: $ShopSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Pat&#39;s Shop(set: $LastVisited to 2)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |ShopSetting&gt;[(if:$HatOrders is false)[You enter the hat shop and see Pat smithing away at her hats.(link:&quot;\n \n &gt;Talk to Pat (30 minutes)&quot;)[(hide:?ShopSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Hat1True:)]]|S1F)[($Hat1False:)]
@@ -705,14 +733,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $ShopSetting2 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Pat Smith&#39;s Hat Shop(set: $LastVisited to 2)
+(set: $ShopSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Pat&#39;s Shop(set: $LastVisited to 2)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[The store is closed
@@ -721,14 +752,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $ShopSetting3 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Pat Smith&#39;s Hat Shop(set: $LastVisited to 2)
+(set: $ShopSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Pat&#39;s Shop(set: $LastVisited to 2)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |ShopSetting&gt;[(if:$StoreHours is false)[You enter the store and see Pat laying out some hattatonium near the forge. She turns to see you and waves hi before taking a spiffy new hat off the anvil. (link:&quot;Talk to Pat&quot;)[(hide:?ShopSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Hat3True:)]]|S1F)[($Hat3False:)]
@@ -838,70 +872,85 @@ Weapon: $Weapon
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="InnSetup" tags="Setup" position="1475,875" size="100,100">Loading 7/10
 
-(set: $InnSetting1 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Tumbletown Inn(set: $LastVisited to 6)
+(set: $InnSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |InnSetting&gt;[A room is reserved for you to sleep in and Deadeye Dan is in the Lobby (if:$Smacktalk is false)[(link:&quot;\n \n &gt;Walk up to Dan&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[(link:&quot;\n \n &gt;Walk up to Dan&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3F)]] (link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Inn1False:)]|S2F)[($Sleep:&quot;&quot;)]|S3F)[($Inn1True:)]
 ]]))
 
 
-(set: $InnSetting2 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Tumbletown Inn(set: $LastVisited to 6)
+(set: $InnSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |InnSetting&gt;[Deadeye Dan has locked the door of his room, there is a room reserved for you to sleep in, and (if:$JerimiahSleep is false)[Jeremiah in the lobby with his head in his hands (link:&quot;\n \n &gt;Talk to Jerimiah (30 minutes)&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Inn2True:)] (link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Inn2False:)]|S2F)[($Sleep:&quot;&quot;)]
 ]]))
 
 
-(set: $InnSetting3 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Tumbletown Inn(set: $LastVisited to 6)
+(set: $InnSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |InnSetting&gt;[There is a room reserved for you to sleep in (link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)](if:$InnVisit is false)[(set:$InnVisit to true)($GetTumbleweed: &quot;InnTime&quot;)]]|S2F)[($Sleep:&quot;&quot;)]
 ]]))
 
 
-(set: $InnSetting4 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Tumbletown Inn(set: $LastVisited to 6)
+(set: $InnSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |InnSetting&gt;[There is a room reserved for you to sleep in. (if:$InnDelivery is false)[Pat is at the front of the inn placing the hats in the mailboxes for each room. She finishes up with one hat remaining. (link:&quot;\n &gt;Talk to Pat&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Inn3False:)]|S2F)[($Sleep:&quot;&quot;)]
 ]]))
 
 
-(set: $InnSetting5 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Tumbletown Inn(set: $LastVisited to 6)
+(set: $InnSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Inn(set: $LastVisited to 6)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |InnSetting&gt;[You see Jeremiah over on the bench eating hay. It looks like he’s stress eating again. (link:&quot;\n \n &gt;Talk to Jeremiah (Until Duel)&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]]|S1F)[($Inn4:)]
@@ -1136,14 +1185,17 @@ Total Items: $TotalItems
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="RanchSetup" tags="Setup" position="1350,875" size="100,100">Loading 6/10
 
-(set: $RanchSetting1 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Good Ol Ranch(set: $LastVisited to 5)
+(set: $RanchSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |RanchSetting&gt;[Jeremiah isn&#39;t at the ranch. Monica the horse is staring at you (link:&quot; \n \n &gt;Walk up to Monica&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]]|S1F)[($MonicaFeed:)]
@@ -1151,14 +1203,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $RanchSetting2 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Good Ol Ranch(set: $LastVisited to 5)
+(set: $RanchSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |RanchSetting&gt;[Monica the Horse is staring at you and (if:$RanchWork is false)[Jeremiah is working at the ranch (link:&quot;\n \n &gt;Walk up to Jerimiah&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Ranch1True:)] (link:&quot; \n \n &gt;Walk up to Monica&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Ranch1False:)]|S2F)[($MonicaFeed:)]
@@ -1166,14 +1221,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $RanchSetting3 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Good Ol Ranch(set: $LastVisited to 5)
+(set: $RanchSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |RanchSetting&gt;[Abraham seems to be looking for something, Monica is sleeping in the barn, and (if:$RanchWork is false)[Jeremiah is working at the ranch (link:&quot;\n \n &gt;Walk up to Jerimiah&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Ranch1True:)] (link:&quot; \n &gt;Walk up to Abraham&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Ranch1False:)]|S2F)[($Ranch2:)]
@@ -1181,14 +1239,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $RanchSetting4 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Good Ol Ranch(set: $LastVisited to 5)
+(set: $RanchSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |RanchSetting&gt;[(if:$StoppedHorseNapping is false)[(TEMP)Swab Ball Johnson is tieing Monica up while yelling random shananagins (link:&quot;\n \n &gt;Stop the horsenapping! (30 minutes)&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($MonicaSleep:)]]|S1F)[($Ranch3:)]
@@ -1196,14 +1257,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $RanchSetting5 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Good Ol Ranch(set: $LastVisited to 5)
+(set: $RanchSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |RanchSetting&gt;[(if:$StoppedHorseNapping is false)[($MonicaGone:)](else:)[($MonicaSleep:)]]
@@ -1211,14 +1275,17 @@ $TimeLeft hours till the duel
 ]]))
 
 
-(set: $RanchSetting6 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Good Ol Ranch(set: $LastVisited to 5)
+(set: $RanchSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |RanchSetting&gt;[Abraham can be seen in the distance carrying a handful of roudy chickens and (if:$StoppedHorseNapping is false)[($MonicaGone:)](else:)[($MonicaSleep:)]]
@@ -1226,14 +1293,17 @@ $TimeLeft hours till the duel
 ]]))
 
 
-(set: $RanchSetting7 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Good Ol Ranch(set: $LastVisited to 5)
+(set: $RanchSetting7 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |RanchSetting&gt;[(if:$StoppedHorseNapping is false)[($MonicaGone:)(if:$RanchVisit is false)[($GetTumbleweed: &quot;RanchTime&quot;)(set:$RanchVisit to true)]
@@ -1241,14 +1311,17 @@ $TimeLeft hours till the duel
 ]]))
 
 
-(set: $RanchSetting8 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Good Ol Ranch(set: $LastVisited to 5)
+(set: $RanchSetting8 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Ranch(set: $LastVisited to 5)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |RanchSetting&gt;[Jerimiah is in the distance and (if:$StoppedHorseNapping is false)[Monica is nowhere to be seen](else:)[Monica is staring into your soul. (link: &quot;\n \n Talk to Monica&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)] - ] (link: &quot;\n &gt;Mosey on over to Jerimiah&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]] |S1F)[($MonicaFeed:)]|S2F)[(if:$ChickenGot is false)[($Ranch5False:)](else:)[($Ranch5True:)]]
@@ -1362,28 +1435,34 @@ $TimeLeft hours till the duel
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="SaloonSetup" tags="Setup" position="1225,875" size="100,100">Loading 5/10
 
-(set: $SaloonSetting1 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[You enter the saloon and see Samson behind the counter. (link:&quot;\n \n &gt;Talk to Samson)&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Saloon1:)]]
 ]))
 
 
-(set: $SaloonSetting2 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[(if:$FirstDrink is false)[You enter the dimly lit saloon and Samson waves to you. (link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon2True:)]]|S1F)[($Saloon2False:)]
@@ -1391,14 +1470,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting3 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |S1F)[($Saloon3Won:)]|S2F)[($Saloon3Boom:)]|S3F)[($Saloon3Friends:)]|S4F)[($Saloon3Lost:)]|S5F)[($Saloon3Stupid:)]|S6F)[($Saloon3Tumble:)]|S7F)[($Saloon3Arrested:)]|S8F)[($Saloon3Done:)]
@@ -1407,14 +1489,17 @@ $TimeLeft hours till the duel
 ]]))
 
 
-(set: $SaloonSetting4 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[(if:$SecondDrink is false)[You enter the saloon and Samson waves to you. (link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon4True:)]]|S1F)[($Saloon4False:)]
@@ -1422,14 +1507,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting5 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[]|S1F)[($Saloon5Secret:)]|S7F)[($Saloon5:)](if: $Won and $Lost and $WentBoom and $GotArrested and $MadeFriends and $WasStupid and $TumbledAround)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)](else:)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S7F)]
@@ -1437,14 +1525,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting6 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[You see Cassi surrounded by empty bottles of whiskey. She’s still going too. (if:$ThirdDrink is false)[Samson waves to you.(link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon6True:)](link:&quot;\n \n &gt;Talk to Cassi&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6:)]
@@ -1452,14 +1543,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting6a to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting6a to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[You see Cassi face down, surrounded on all sides by empty whiskey bottles. Samson is currently taking the bottles one by one and placing them in the cleaning rack so he can reuse them. (if:$StolenKey is false)[(link:&quot;\n \n &gt;Head over to the table&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6Steal:)]
@@ -1467,14 +1561,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting7 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting7 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[You see Cassi face down, surrounded on all sides by empty whiskey bottles. Samson is currently taking the bottles one by one and placing them in the cleaning rack so he can reuse them.(if:$StolenKey is false)[(link:&quot;\n \n &gt;Head over to the table&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6Steal:)]
@@ -1482,14 +1579,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting8 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting8 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[(if:$SaloonDelivery is false)[You see Pat with a frantic look on her face and Samson with a hat that clearly is too small for him. She takes the hat and says something to Samson before heading to the door. Pat tosses the hat into the garbage on her way out. (link:&quot;\n &gt;Take the hat&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[Samson is cleaning the back of the saloon]]|S1F)[($Saloon8False:)]
@@ -1497,14 +1597,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting9 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting9 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[Swab Ball Johnson is sleeping in a corner and (if:$FourthDrink is false)[Samson is behind the counter (link:&quot;\n \n &gt;Head over to the counter&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon9True:)]]|S1F)[($Saloon9False:)]
@@ -1512,14 +1615,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting10 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting10 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[Samson is sleeping behind the counter (if:$PreparingForDuel is false)[ Deadeye Dan is leaning against the wall in the darkest corner. (link:&quot;\n \n &gt;Talk to Deadeye Dan&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?DanDan)] ](else:)[($Saloon10True:)]]|DanDan)[($Saloon10False:)]
@@ -1527,14 +1633,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $SaloonSetting11 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Samson&#39;s Saloon(set: $LastVisited to 4)
+(set: $SaloonSetting11 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Sam&#39;s Saloon(set: $LastVisited to 4)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SaloonSetting&gt;[You enter the saloon and Samson waves to you and gives you a warm smile.(if:$PreparingForDuel is false)[ Deadeye Dan is leaning against the wall in the darkest corner. (link:&quot;\n \n &gt;Talk to Deadeye Dan (No time)&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?DanDan)]](else:)[($Saloon10True:)] (link:&quot;\n &gt;Head over to the counter&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?FreeDrinks)]]|DanDan)[($Saloon10False:)]|FreeDrinks)[($Saloon11False:)]
@@ -1709,98 +1818,119 @@ $TimeLeft hours till the duel
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="SheriffSetup" tags="Setup" position="1225,1000" size="100,100">Loading 8/10
 
-(set: $SheriffSetting1 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Sheriff(set: $LastVisited to 7)
+(set: $SheriffSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SheriffSetting&gt;[(if:$PaperWork is false)[You enter the sheriff’s office to see Abraham bolt upward from his chair. You know he was sleeping, he doesn’t do much else. (link:&quot;\n \n &gt;See what&#39;s up (No time)&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Sheriff1True:)]]|S1F)[($Sheriff1False:)]
 ]]))
 
 
-(set: $SheriffSetting2 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Sheriff(set: $LastVisited to 7)
+(set: $SheriffSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SheriffSetting&gt;[You see a note saying that Abraham is out doing work and he&#39;ll back at 4. Hopefully he&#39;s not chasing Chickens around again.(if:$SheriffVisit is false)[(set:$SheriffVisit to true)($GetTumbleweed: &quot;SheriffTime&quot;)]]
 ]]))
 
 
-(set: $SheriffSetting3 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Sheriff(set: $LastVisited to 7)
+(set: $SheriffSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SheriffSetting&gt;[Abraham is trying to stay awake. (if:$SheriffDelivery is false)[You see Pat handing Abraham a hat. She asks something else but you can’t hear it. (link:&quot;\n \n &gt;Talk to Pat&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]]]|S1F)[($Sheriff3False:)]
 ]]))
 
 
-(set: $SheriffSetting4 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Sheriff(set: $LastVisited to 7)
+(set: $SheriffSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SheriffSetting&gt;[Abraham is sleeping on his desk. He&#39;s probably dreaming about eating chicken. (if:$SheriffVisit is false)[(set:$SheriffVisit to true)($GetTumbleweed: &quot;SheriffTime&quot;)]]
 ]]))
 
 
-(set: $SheriffSetting5 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Sheriff(set: $LastVisited to 7)
+(set: $SheriffSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SheriffSetting&gt;[There&#39;s a note on Abraham&#39;s desk saying he&#39;ll be back at 8.]
 ]]))
 
 
-(set: $SheriffSetting6 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Sheriff(set: $LastVisited to 7)
+(set: $SheriffSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SheriffSetting&gt;[Abraham is trying to stay awake at his desk.(if:$StolenKey is true)[(if: $Complain is false)[Cassi is in the sheriff’s office visibly upset over the keys that //you// took. (link:&quot;\n \n &gt;Listen to Cassi&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]]](else:)[You see Cassi in the corner the office on the main road looking for people to ask about the keys that you stole. You avoid eye contact as you walk to the door of the office.]]|S1F)[($Sheriff4:)]
 ]]))
 
 
-(set: $SheriffSetting7 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-Sheriff(set: $LastVisited to 7)
+(set: $SheriffSetting7 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Jail House(set: $LastVisited to 7)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |SheriffSetting&gt;[Sheriff Abraham is sitting out front of his office drinking his coffee quietly. (if:$StolenKey is true)[Cassi is writing a formal complaint (link:&quot;\n &gt;Head over to Cassi&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](link: &quot;\n \n &gt;Walk up to Abraham&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Sheriff4:)]|S2F)[(if:$Joe is true)[($Sheriff6True:)](else:)[($Sheriff6False:)]]
@@ -2084,7 +2214,7 @@ SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;
 
 (goto:&quot;StreetSetup&quot;)</tw-passagedata><tw-passagedata pid="38" name="Street" tags="Area" position="1025,150" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
-&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159524582882033674/Dusty_Avenue_.png?ex=6531566b&amp;is=651ee16b&amp;hm=b5c65a522bf5e02b12bf8cc6e244749c71468a7130f96aab75c813eec6b89336&amp; class=&quot;background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
+(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159524582882033674/Dusty_Avenue_.png?ex=6531566b&amp;is=651ee16b&amp;hm=b5c65a522bf5e02b12bf8cc6e244749c71468a7130f96aab75c813eec6b89336&amp; class=&quot;background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160965196555235389/image0.jpg?ex=65369418&amp;is=65241f18&amp;hm=8429ea87d59adb11a60d9f80cb601daa8ed58f0b8198c10bc7bfd0c6952713cb&amp; class=&quot;background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;]
 
 &lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SuperTextboxLand.png class=&quot;textbox&quot; width=&quot;1400&quot; height=&quot;260&quot;&gt;
 
@@ -2092,28 +2222,34 @@ SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="StreetSetup" tags="Setup" position="1225,750" size="100,100">Loading 2/10
 
-(set: $StreetSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-pic&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-pic&quot;width=&quot;500&quot; height=&quot;500&quot;&gt;]
-&lt;div class=&quot;container&quot;&gt;
+(set: $StreetSetting1 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours left
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[(if:$Tutorial is false)[Jeremiah is on the main road. (link:&quot; \n  \n&gt;Talk to Jeremiah (30 minutes)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Street1True:)]]|S1F)[($Street1False:)]
 ]]))
 
 
-(set: $StreetSetting2 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting2 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[You see Swab-Ball John off against a building.(link:&quot;\n \n &gt;Talk to Swab-Ball John (1 hour)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street2:)]]
@@ -2121,14 +2257,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting3 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[The street is empty. (if:$StreetVisit is false)[($GetTumbleweed: &quot;StreetTime&quot;)(set:$StreetVisit to true)]]]
@@ -2136,14 +2275,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting4 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[Swab-Ball John is sitting in a rocking chair on the main road.(link:&quot;\n \n &gt;Talk to Swab-Ball John (1 hour)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street4:)]]
@@ -2151,14 +2293,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting5 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting5 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[(if:$HatCarry is false)[On the road you see Pat struggling to carry all of her hats back home.(link:&quot;\n \n &gt;Talk to Pat&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Street5True:)]]|S1F)[($Street5False:)]
@@ -2166,14 +2311,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting6 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting6 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[Map-&gt;Map]]
+[[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[Swab-Ball John is sitting in a rocking chair on the main road.(link:&quot;\n \n &gt;Talk to Swab-Ball John (1 hour)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street6:)]]
@@ -2181,14 +2329,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting7 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting7 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[You see Cassi walking from the gunsmith to the saloon.(link:&quot;\n \n &gt;Talk to Cassi&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street7:)]]
@@ -2197,14 +2348,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting8 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting8 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[Swab-Ball John is sitting in a rocking chair on the main road.(link:&quot;\n \n &gt;Talk to Swab-Ball John (1 hour)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street8:)]]
@@ -2212,14 +2366,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting9 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting9 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[You see Pat with her hats on the Main Road walking towards the sheriff, receipts and hats in hand.]]
@@ -2228,14 +2385,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting10 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting10 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[Swab-Ball John is sitting in a rocking chair on the main road.(link:&quot;\n \n &gt;Talk to Swab-Ball John (1 hour)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street10:)]]
@@ -2243,14 +2403,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting11 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting11 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[Pat is on the main road with a hat, probably delivering it to the saloon.]]
@@ -2258,14 +2421,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting12 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting12 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[Swab-Ball John is sitting in a rocking chair on the main road.(link:&quot;\n \n &gt;Talk to Swab-Ball John (1 hour)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street12:)]]
@@ -2273,14 +2439,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting13 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting13 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[Pat is on the main road with a stack of hats, walking towards the inn.]]
@@ -2288,14 +2457,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting14 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting14 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[(TEMP)Abraham is patrolling the street(link:&quot;\n \n &gt;Talk to Abraham (No time)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street14:)]]
@@ -2304,14 +2476,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting15 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting15 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[Swab-Ball John is sitting in a rocking chair on the main road.(link:&quot;\n \n &gt;Talk to Swab-Ball John (1 hour)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street15:)]]
@@ -2320,14 +2495,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting16 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting16 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[(if:$StreetCleaned is false)[As you saunter out onto the main road you see Jeremiah sweeping dust. (link:&quot;\n \n &gt;Talk to Jeremiah (30 minutes)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Street16True:)]]|S1F)[($Street16False:)]
@@ -2337,14 +2515,17 @@ $TimeLeft hours till the duel
 
 
 
-(set: $StreetSetting17 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+(set: $StreetSetting17 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
-$TimeLeft hours till the duel
-
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Dusty Avenue(set: $LastVisited to 1)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |StreetSetting&gt;[You spot Swab-Ball John pacing with a concerned look on his face, one that you don’t think you’ve ever seen before. (link:&quot;\n \n &gt;Talk to Swab-Ball John (1 hour)&quot;)[(hide:?StreetSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Street17:)]]
@@ -2486,42 +2667,51 @@ Weapon: $Weapon
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="TrailSetup" tags="Setup" position="1475,750" size="100,100">Loading 4/10
 
-(set: $TrailSetting1 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-The Endless Trail(set: $LastVisited to 3)
+(set: $TrailSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Endless Trail(set: $LastVisited to 3)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |TrailSetting&gt;[You see a trail stretching off into the distance as well as Swab-Ball John. (link:&quot;\n \n &gt;Go to Swab Ball John&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)](link:&quot;\n &gt;Go to the trail&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3)]]|S2)[($Trail1:)]|S3)[($TrailWalk:)]]
 ]))
 
 
-(set: $TrailSetting2 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-The Endless Trail(set: $LastVisited to 3)
+(set: $TrailSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Endless Trail(set: $LastVisited to 3)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |TrailSetting&gt;[You see a trail stretching off into the distance(link:&quot;\n &gt;Go to the trail&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3)](if:$TrailVisit is false)[($GetTumbleweed: &quot;TrailTime&quot;)(set:$TrailVisit to true)]]|S3)[($TrailWalk:)]]
 ]))
 
 
-(set: $TrailSetting3 to (macro: [ (output:)[
-&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-The Endless Trail(set: $LastVisited to 3)
+(set: $TrailSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;500&quot; height=&quot;500&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 20))[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
-$Hour:$Minute(if: $Minute &lt;10)[0] $M      
-$TimeLeft hours till the duel
-
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+Endless Trail(set: $LastVisited to 3)           
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M 
+$TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 |TrailSetting&gt;[You see a trail stretching off into the distance as well as (if: $ChickenGot  is false)[ a sign outside that says: “Temporary Office”(link:&quot;\n \n &gt;Look inside&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)](link:&quot;\n &gt;Go to the trail&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3)]](else:)[a large tent with a sign outside that says: “Temporary Office”(link:&quot;\n \n &gt;Look inside&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1)](link:&quot;\n &gt;Go to the trail&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3)]]]|S1)[($Trail3True:)]|S2)[($Trail3False:)]|S3)[($TrailWalk:)]]
