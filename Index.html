@@ -81,6 +81,55 @@ tw-sidebar {
    margin: 425px 0px 0px -185px;
 }
 
+.shopbox {
+   position: absolute;
+   z-index: 2;
+   margin: -225px 0px 0px 600px;
+}
+
+
+.shop-text0 {
+  position: fixed;
+  z-index; 100;
+  margin: -775px 0px 0px -40px;
+}
+
+.shop-text1 {
+  position: fixed;
+  z-index; 100;
+  margin: -750px 0px 0px 0px;
+}
+
+.shop-text2 {
+  position: fixed;
+  z-index; 100;
+  margin: -787px 0px 0px 300px;
+}
+
+.shop-text3 {
+  position: fixed;
+  z-index; 100;
+  margin: -535px 0px 0px 0px;
+}
+
+.shop-text4 {
+  position: fixed;
+  z-index; 100;
+  margin: -575px 0px 0px 300px;
+}
+
+.shop-text5 {
+  position: fixed;
+  z-index; 100;
+  margin: -350px 0px 0px 0px;
+}
+
+.shop-text6 {
+  position: fixed;
+  z-index; 100;
+  margin: -375px 0px 0px 300px;
+}
+
 
 .text {
    position: absolute;
@@ -122,12 +171,23 @@ tw-sidebar {
    margin: 267px 0px 0px 0px;
 }
 
+.game-text2 {
+   position: absolute;
+   z-index: 3;
+   margin: 240px 0px 0px -130px;
+   display: flex;
+   list-style-type:none;
+   width:80%;
+   padding: 0;
+   overflow: hidden;
+}
+
 .map-text {
   position: absolute;
   z-index: 3;
   margin: -180px 0px 0px -285px;
   color: white;
-}`
+}
   
   
 
@@ -137,6 +197,51 @@ tw-sidebar {
   	top: -50px;
   	left: -300px;
 }
+
+.won-badge {
+  position: absolute;
+  z-index: 3;
+  margin: 10px 0px 0px 1000px;
+}
+
+.lost-badge {
+  position: absolute;
+  z-index: 3;
+  margin: 10px 0px 0px 1090px;
+}
+
+
+.stupid-badge {
+  position: absolute;
+  z-index: 3;
+  margin: 10px 0px 0px 1180px;
+}
+
+.boom-badge {
+  position: absolute;
+  z-index: 3;
+  margin: 10px 0px 0px 1270px;
+}
+
+.friend-badge {
+  position: absolute;
+  z-index: 3;
+  margin: 10px 0px 0px 1360px;
+}
+
+.tumble-badge {
+  position: absolute;
+  z-index: 3;
+  margin: 10px 0px 0px 1450px;
+}
+
+.arrested-badge {
+  position: absolute;
+  z-index: 3;
+  margin: 10px 0px 0px 1540px;
+}
+
+
 
 .black {
   position: absolute;
@@ -447,45 +552,50 @@ Dan: We&#39;re both still alive. What does that mean?
 (link:&quot;What does it mean!&quot;)[
 Abraham: Well acording to Tumble Town law, the person who declares the duel gets drinks for the other guy
 (link:&quot;Free drinks!&quot;)[
-(go-to:&quot;TieScreen&quot;)]]]]]]</tw-passagedata><tw-passagedata pid="12" name="Gunshop" tags="Area" position="700,125" size="100,100">The Best Gunsmith in Town(set: $LastVisited to 10)
+(go-to:&quot;TieScreen&quot;)]]]]]]</tw-passagedata><tw-passagedata pid="12" name="Gunshop" tags="Area" position="700,125" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
-[[Map-&gt;Map]]
+&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159527204087144539/image0.jpg?ex=653158dc&amp;is=651ee3dc&amp;hm=f1628a0d75822e122b9b356ff18ea7df6a131246a3a5ac6f865be2171abe6a17&amp;ex=6531566b&amp;is=651ee16b&amp;hm=b5c65a522bf5e02b12bf8cc6e244749c71468a7130f96aab75c813eec6b89336&amp; class=&quot;background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 
-$Hour : $Minute(if: $Minute &lt;10)[0] $M      
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SuperTextboxLand.png class=&quot;textbox&quot; width=&quot;700&quot; height=&quot;260&quot;&gt;
+
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SuperTextboxLand.png class=&quot;shopbox&quot; width=&quot;700&quot; height=&quot;850&quot;&gt;
+
+
+
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+The Best Gunsmith in Town(set: $LastVisited to 10)
+[[&gt;Map-&gt;Map]]
+$Hour:$Minute(if: $Minute &lt;10)[0] $M      
 $TimeLeft hours till the duel
 
 &lt;!--(if:visits is 1)[(Location desciption]
 --&gt;
-($PlaySong:&quot;gunSong&quot;)(if:$Timepassed &lt; 7)[($BuyGun:)](else-if:$Timepassed &lt; 11)[($Gunshop1:)](else-if:$Timepassed &lt; 16)[(if:$StolenKey is true)[(if:$StolenAmmo is false)[($Gunshop2False:)](else:)[($Gunshop2True:)]](else:)[($Gunshop1:)]](else-if:$Timepassed is 16)[($Gunshop3:)](else-if:$Timepassed is 17)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($BuyGun:)]](else-if:$Timepassed &lt; 21)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($Gunshop5:)($BuyGun:)]](else-if:$Timepassed &lt; 24)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($BuyGun:)]]
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;game-text2&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+($PlaySong:&quot;gunSong&quot;)(if:$Timepassed &lt; 7)[($Gunshop0:)](else-if:$Timepassed &lt; 11)[($Gunshop1:)](else-if:$Timepassed &lt; 16)[(if:$StolenKey is true)[(if:$StolenAmmo is false)[($Gunshop2False:)](else:)[($Gunshop2True:)]](else:)[($Gunshop1:)]](else-if:$Timepassed is 16)[($Gunshop3:)](else-if:$Timepassed is 17)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($Gunshop0:)]](else-if:$Timepassed &lt; 21)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($Gunshop5:)]](else-if:$Timepassed &lt; 24)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($Gunshop0:)]](else:)[(go-to: &quot;Ending&quot;)]
 
-(else:)[
-(go-to: &quot;Ending&quot;)
-]</tw-passagedata><tw-passagedata pid="13" name="GunshopSetup" tags="Setup" position="1475,1000" size="100,100">Loading 10/10
+($BuyGun:)</tw-passagedata><tw-passagedata pid="13" name="GunshopSetup" tags="Setup" position="1475,1000" size="100,100">Loading 10/10
 
-(set: $Gunshop1 to (macro: [ (output:)[
-|Gunshop1a&gt;[The store is closed
+(set: $Gunshop0 to (macro: [ (output:)[|Gunshop5a&gt;[You open the door to the gun shop and see Cassi the gunsmith behind the counter, (link:&quot;Talk to Cassi&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop5b)(hide:?Gunshop5a)]]|Gunshop5b)[Cassi: Welcome, I take it you&#39;ve coome to buy a gun? (link:&quot;Yep&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop5c)(hide:?Gunshop5b)]]|Gunshop5c)[Cassi: Take a look at what I got in stock, you might find something you like.]
+]]))
 
-(if:$GunshopVisit is false)[($GetTumbleweed: &quot;GunshopTime&quot;)(set:$GunshopVisit to true)]
+(set: $Gunshop1 to (macro: [ (output:)[|Gunshop1a&gt;[(if:$GunshopVisit is false)[($GetTumbleweed: &quot;GunshopTime&quot;)(set:$GunshopVisit to true)]
 ]]]))
 
-(set: $Gunshop2False to (macro: [ (output:)[
-|Gunshop2Fa&gt;[(TEMP)Nobody is around (link:&quot;Steal all the ammo from the shop (1 hour)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop2Fb)(hide:?Gunshop2Fa)]]|Gunshop2Fb)[You use the key to acsess the shop storage and steal all the ammo from the shop (link:&quot;That was a lot of work&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop2Fc)(hide:?Gunshop2Fb)]]|Gunshop2Fc)[Now nobody will have to kill each other(set:$LastVisited to 60)(set:$StolenAmmo to true) (link:&quot;Next&quot;)[(go-to:&quot;GunshopTime&quot;)(hide:?Gunshop2Fc)]
+(set: $Gunshop2False to (macro: [ (output:)[|Gunshop2Fa&gt;[(TEMP)Nobody is around (link:&quot;Steal all the ammo from the shop (1 hour)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop2Fb)(hide:?Gunshop2Fa)]]|Gunshop2Fb)[You use the key to acsess the shop storage and steal all the ammo from the shop (link:&quot;That was a lot of work&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop2Fc)(hide:?Gunshop2Fb)]]|Gunshop2Fc)[Now nobody will have to kill each other(set:$LastVisited to 60)(set:$StolenAmmo to true) (link:&quot;Next&quot;)[(go-to:&quot;GunshopTime&quot;)(hide:?Gunshop2Fc)]
 ]]]))
 
-(set: $Gunshop2True to (macro: [ (output:)[
-|Gunshop2F&gt;[Nobody noticed what you did]]
+(set: $Gunshop2True to (macro: [ (output:)[|Gunshop2F&gt;[Nobody noticed what you did]]
 ]))
 
-(set: $Gunshop3 to (macro: [ (output:)[
-|Gunshop3&gt;[Cassi is checking the shop to make sure nothing was stolen]]
+(set: $Gunshop3 to (macro: [ (output:)[|Gunshop3&gt;[Cassi is checking the shop to make sure nothing was stolen]]
 ]))
 
-(set: $Gunshop4 to (macro: [ (output:)[
-|Gunshop4&gt;[Extra locks were added to the shop. There&#39;s no way you&#39;re getting in now]]
+(set: $Gunshop4 to (macro: [ (output:)[|Gunshop4&gt;[Extra locks were added to the shop. There&#39;s no way you&#39;re getting in now]]
 ]))
 
-(set: $Gunshop5 to (macro: [(output:)[
-|Gunshop5a&gt;[Deadeye Dan is in another dark corner brooding, staring of into space, and quietly airin’ the lungs. (link:&quot;Talk to Deadeye Dan (No time)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop5b)(hide:?Gunshop5a)]]|Gunshop5b)[Deadeye Dan: D’NOT DISSTURB ME NO EYES. I’M CONTEEMPLATIN HOW I KEELL YA. (link:&quot;That’s nice Dan.&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop5c)(hide:?Gunshop5b)]]|Gunshop5c)[Deadeye Dan: ARE YOU TRYNNA START SUMTHIN NO EYES!!! (link:&quot;Nuh’ uh&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop5d)(hide:?Gunshop5c)]]|Gunshop5d)[Deadeye Dan: OHH. WELL FINE THEN. I’M WAITING ON MAH GUHN TO BE DONE. NEEDED SOME OIL. I’M OVERSHARING, STOP TALKING TO ME NO EYES! (link:&quot;Shur, Dan.&quot;)[(hide:?Gunshop5d)(go-to:&quot;GunshopTime&quot;)]]]]))
+(set: $Gunshop5 to (macro: [(output:)[|Gunshop5a&gt;[Deadeye Dan is in another dark corner brooding, staring of into space, and quietly airin’ the lungs. (link:&quot;Talk to Deadeye Dan (No time)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop5b)(hide:?Gunshop5a)]]|Gunshop5b)[Deadeye Dan: D’NOT DISSTURB ME NO EYES. I’M CONTEEMPLATIN HOW I KEELL YA. (link:&quot;That’s nice Dan.&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop5c)(hide:?Gunshop5b)]]|Gunshop5c)[Deadeye Dan: ARE YOU TRYNNA START SUMTHIN NO EYES!!! (link:&quot;Nuh’ uh&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Gunshop5d)(hide:?Gunshop5c)]]|Gunshop5d)[Deadeye Dan: OHH. WELL FINE THEN. I’M WAITING ON MAH GUHN TO BE DONE. NEEDED SOME OIL. I’M OVERSHARING, STOP TALKING TO ME NO EYES! (link:&quot;Shur, Dan.&quot;)[(hide:?Gunshop5d)(go-to:&quot;GunshopTime&quot;)]]]]))
 
 (go-to:&quot;Street&quot;)</tw-passagedata><tw-passagedata pid="14" name="GunshopTime" tags="TimeManagement" position="775,225" size="100,100">(set: $TotalItems to $MiddleFingers + $Drinks + $Hats + $Eggs + $Horseshoes + $Tumbleweed)
 
@@ -575,7 +685,7 @@ $TimeLeft hours till the duel
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 Pat Smith&#39;s Hat Shop(set: $LastVisited to 2)
-[[Map-&gt;Map]]
+[[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M      
 $TimeLeft hours till the duel
 
@@ -590,7 +700,7 @@ $TimeLeft hours till the duel
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 Pat Smith&#39;s Hat Shop(set: $LastVisited to 2)
-[[Map-&gt;Map]]
+[[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M
 $TimeLeft hours till the duel
 
@@ -606,7 +716,7 @@ $TimeLeft hours till the duel
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
 Pat Smith&#39;s Hat Shop(set: $LastVisited to 2)
-[[Map-&gt;Map]]
+[[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M      
 $TimeLeft hours till the duel
 
@@ -771,7 +881,7 @@ $TimeLeft hours till the duel
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-|InnSetting&gt;[There is a room reserved for you to sleep in. (if:$InnDelivery is false)[Pat is at the front of the inn placing the hats in the mailboxes for each room. She finishes up with one hat remaining. (link:&quot;\n \n &gt;Talk to Pat&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Inn3False:)]|S2F)[($Sleep:&quot;&quot;)]
+|InnSetting&gt;[There is a room reserved for you to sleep in. (if:$InnDelivery is false)[Pat is at the front of the inn placing the hats in the mailboxes for each room. She finishes up with one hat remaining. (link:&quot;\n &gt;Talk to Pat&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Inn3False:)]|S2F)[($Sleep:&quot;&quot;)]
 ]]))
 
 
@@ -982,7 +1092,7 @@ Tumbleweed: $Tumbleweed
 Middle Fingers: $MiddleFingers
 Total Items: $TotalItems
 
-(if:$Won)[](else:)[](if:$Lost)[](else:)[](if:$WasStupid)[](else:)[](if:$WentBoom)[](else:)[](if:$WasStupid)[](else:)[](if:$MadeFriends)[](else:)[](if:$TumbledAround)[](else:)[](if:$GotArrested)[](else:)[]</tw-passagedata><tw-passagedata pid="27" name="Opening" tags="Opening" position="975,0" size="100,100">&lt;div class=&quot;container&quot;&gt;
+(if:$Won)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/WonBadge.png class=&quot;won-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/NoWon.png class=&quot;won-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](if:$Lost)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Skull.png class=&quot;lost-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/NoSkull.png class=&quot;lost-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](if:$WasStupid)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Dead.png class=&quot;stupid-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/NoDead.png class=&quot;stupid-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](if:$WentBoom)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Boom.png class=&quot;boom-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/NoBoom.png class=&quot;boom-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](if:$MadeFriends)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/StolenAmmo.png class=&quot;friend-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/NoStolenAmmo.png class=&quot;friend-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](if:$TumbledAround)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Tumbleweed.png class=&quot;tumble-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/NoTumblweed.png class=&quot;tumble-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](if:$GotArrested)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Jail.png class=&quot;arrested-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/NoJail.png class=&quot;arrested-badge&quot; height=&quot;80&quot; width=&quot;80&quot;&gt;]</tw-passagedata><tw-passagedata pid="27" name="Opening" tags="Opening" position="975,0" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159524582882033674/Dusty_Avenue_.png?ex=6531566b&amp;is=651ee16b&amp;hm=b5c65a522bf5e02b12bf8cc6e244749c71468a7130f96aab75c813eec6b89336&amp; class=&quot;background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 
@@ -1328,7 +1438,7 @@ $TimeLeft hours till the duel
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-|SaloonSetting&gt;[You open the door to the saloon to see Cassi surrounded by empty bottles of whiskey. She’s still going too. (if:$ThirdDrink is false)[Samson waves to you.(link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon6True:)](link:&quot;\n \n &gt;Talk to Cassi&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6:)]
+|SaloonSetting&gt;[You see Cassi surrounded by empty bottles of whiskey. She’s still going too. (if:$ThirdDrink is false)[Samson waves to you.(link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon6True:)](link:&quot;\n \n &gt;Talk to Cassi&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6:)]
 ]]))
 
 
@@ -1343,7 +1453,7 @@ $TimeLeft hours till the duel
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-|SaloonSetting&gt;[You push the door open to the saloon and see Cassi face down, surrounded on all sides by empty whiskey bottles. Samson is currently taking the bottles one by one and placing them in the cleaning rack so he can reuse them. (if:$StolenKey is false)[(link:&quot;\n \n &gt;Head over to the table&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6Steal:)]
+|SaloonSetting&gt;[You see Cassi face down, surrounded on all sides by empty whiskey bottles. Samson is currently taking the bottles one by one and placing them in the cleaning rack so he can reuse them. (if:$StolenKey is false)[(link:&quot;\n \n &gt;Head over to the table&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6Steal:)]
 ]]))
 
 
@@ -1358,7 +1468,7 @@ $TimeLeft hours till the duel
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-|SaloonSetting&gt;[You push the door open to the saloon and see Cassi face down, surrounded on all sides by empty whiskey bottles. Samson is currently taking the bottles one by one and placing them in the cleaning rack so he can reuse them.(if:$StolenKey is false)[(link:&quot;\n \n &gt;Head over to the table&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6Steal:)]
+|SaloonSetting&gt;[You see Cassi face down, surrounded on all sides by empty whiskey bottles. Samson is currently taking the bottles one by one and placing them in the cleaning rack so he can reuse them.(if:$StolenKey is false)[(link:&quot;\n \n &gt;Head over to the table&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6Steal:)]
 ]]))
 
 
@@ -1373,7 +1483,7 @@ $TimeLeft hours till the duel
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-|SaloonSetting&gt;[(if:$SaloonDelivery is false)[You see Pat with a frantic look on her face and Samson with a hat that clearly is too small for him. She takes the hat and says something to Samson before heading to the door. Pat tosses the hat into the garbage on her way out. (link:&quot;\n \n &gt;Take the hat&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[Samson is cleaning the back of the saloon]]|S1F)[($Saloon8False:)]
+|SaloonSetting&gt;[(if:$SaloonDelivery is false)[You see Pat with a frantic look on her face and Samson with a hat that clearly is too small for him. She takes the hat and says something to Samson before heading to the door. Pat tosses the hat into the garbage on her way out. (link:&quot;\n &gt;Take the hat&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[Samson is cleaning the back of the saloon]]|S1F)[($Saloon8False:)]
 ]]))
 
 
@@ -1403,7 +1513,7 @@ $TimeLeft hours till the duel
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-|SaloonSetting&gt;[Samson is sleeping behind the counter (if:$PreparingForDuel is false)[ Deadeye Dan is leaning against the wall in the darkest corner. (link:&quot;\n \n &gt;Talk to Deadeye Dan (No time)&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?DanDan)] ](else:)[($Saloon10True:)] (link:&quot;\n \n &gt;Head over to the counter&quot;)[(hide:?SaloonSetting)(set:$Story to true)]]]|DanDan)[($Saloon10False:)]
+|SaloonSetting&gt;[Samson is sleeping behind the counter (if:$PreparingForDuel is false)[ Deadeye Dan is leaning against the wall in the darkest corner. (link:&quot;\n \n &gt;Talk to Deadeye Dan (No time)&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?DanDan)] ](else:)[($Saloon10True:)]]]|DanDan)[($Saloon10False:)]
 ]))
 
 
@@ -1418,7 +1528,7 @@ $TimeLeft hours till the duel
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
-|SaloonSetting&gt;[You enter the saloon and Samson waves to you and gives you a warm smile.(if:$PreparingForDuel is false)[ Deadeye Dan is leaning against the wall in the darkest corner. (link:&quot;\n \n &gt;Talk to Deadeye Dan (No time)&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?DanDan)] - ](else:)[($Saloon10True:)] (link:&quot;\n &gt;Head over to the counter&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?FreeDrinks)]]|DanDan)[($Saloon10False:)]|FreeDrinks)[($Saloon11False:)]
+|SaloonSetting&gt;[You enter the saloon and Samson waves to you and gives you a warm smile.(if:$PreparingForDuel is false)[ Deadeye Dan is leaning against the wall in the darkest corner. (link:&quot;\n \n &gt;Talk to Deadeye Dan (No time)&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?DanDan)]](else:)[($Saloon10True:)] (link:&quot;\n &gt;Head over to the counter&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?FreeDrinks)]]|DanDan)[($Saloon10False:)]|FreeDrinks)[($Saloon11False:)]
 ]]))
 
 
@@ -1882,17 +1992,29 @@ $TimeLeft hours till the duel
 ]]))
 
 (set: $BuyGun to (macro:[(output:)[
-What gun do you want to buy?
-
-Ol Reliable
+(if: ($Timepassed &gt;6) and ($Timepassed &lt;17))[&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text0&quot; style=&quot;text-align:left;font-size:40px;font-family:sans-serif&quot;&gt;
+STORE IS CLOSED! COME BACK AT 5:00 AM TO BUY GUNS! DON&#39;T STEAL ANYTHING! IF YOU NEED ME I&#39;M PROBABLY DRINKING!]&#39;&#39;](else-if: ($StolenAmmo is true) and ($Timepassed &gt; 15))[&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text0&quot; style=&quot;text-align:left;font-size:40px;font-family:sans-serif&quot;&gt;
+SOME CROOK BROKE INTO MY SHOP AND STOLE ALL MY AMMO. IF YOU DID THIS, YOU KNOW WHO YOU ARE. IF YOU DIDN&#39;T GO FIND OUT WHO DID IT BECAUSE OUR SHERIFF IS TOO LAZY TO FIND OUT. Thanks :)]&#39;&#39;](else-if: ($StolenKey is true) and ($Timepassed &gt; 15))[&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text0&quot; style=&quot;text-align:left;font-size:40px;font-family:sans-serif&quot;&gt;
+SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;T YOU BREAK INTO MY SHOP! YOU HAD THE KEY! WHY ELSE WOULD YOU STEAL IT!]&#39;&#39;]
+(else:)[
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text1&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&#39;&#39;(text-style:&quot;underline&quot;)[Ol Reliable]&#39;&#39;
 
  - 14 of any item ($TotalItems/14)
 
-(if: $TotalItems &gt; 13)[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $OlChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$OlChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Ol&quot;)(go-to:&quot;Ending&quot;)](if:$OlChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[Can&#39;t afford weapon]
+(if: $TotalItems &gt; 13)[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $OlChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$OlChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Ol&quot;)(go-to:&quot;Ending&quot;)](if:$OlChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[//Can&#39;t afford weapon//]
 
 
-
-The Looong Gun
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text2&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&#39;&#39;(text-style:&quot;underline&quot;)[The Looong Gun]&#39;&#39;
 
  - 3 hats ($Hats/3)
 
@@ -1900,11 +2022,12 @@ The Looong Gun
 
  - 2 tumbleweeds ($Tumbleweed/2)
 
-(if: ($Hats &gt; 2) and ($Horseshoes &gt; 1) and ($Tumbleweed &gt; 1))[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $LongChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$LongChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Long&quot;)(go-to:&quot;Ending&quot;)](if:$LongChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[Can&#39;t afford weapon]
+(if: ($Hats &gt; 2) and ($Horseshoes &gt; 1) and ($Tumbleweed &gt; 1))[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $LongChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$LongChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Long&quot;)(go-to:&quot;Ending&quot;)](if:$LongChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[//Can&#39;t afford weapon//]
 
 
-
-The Sunsetter
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text3&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&#39;&#39;(text-style:&quot;underline&quot;)[The Sunsetter]&#39;&#39;
 
  - 3 Eggs ($Eggs/3)
 
@@ -1912,31 +2035,34 @@ The Sunsetter
 
  - 2 Drinks ($Drinks/2)
 
-(if: ($Eggs &gt; 2) and ($MiddleFingers &gt; 1) and ($Drinks &gt; 1))[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $SunsetChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$SunsetChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Sunset&quot;)(go-to:&quot;Ending&quot;)](if:$SunsetChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[Can&#39;t afford weapon]
+(if: ($Eggs &gt; 2) and ($MiddleFingers &gt; 0) and ($Drinks &gt; 1))[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $SunsetChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$SunsetChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Sunset&quot;)(go-to:&quot;Ending&quot;)](if:$SunsetChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[//Can&#39;t afford weapon//]
 
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text4&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&#39;&#39;(text-style:&quot;underline&quot;)[The Freebie]&#39;&#39;
 
-The Freebie
-
- - Nothing, yep it&#39;s completely free (0/0)
+ - Yep, it&#39;s completely free!
 
 (link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $FreeChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$FreeChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Freebie&quot;)(go-to:&quot;Ending&quot;)](if:$FreeChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]
 
 
-
-Barrel of the Strong Stuff
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text5&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&#39;&#39;(text-style:&quot;underline&quot;)[Barrel of the Strong Stuff]&#39;&#39;
 
  - 17 of any item ($TotalItems/17)
 
-(if: $TotalItems &gt; 16)[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $StrongChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$StrongChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Strong&quot;)(go-to:&quot;Ending&quot;)](if:$StrongChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[Can&#39;t afford weapon]
+(if: $TotalItems &gt; 16)[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $StrongChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$StrongChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Strong&quot;)(go-to:&quot;Ending&quot;)](if:$StrongChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[//Can&#39;t afford weapon//]
 
 
-
-The Tumble Horn
+&lt;div class=&quot;container&quot;&gt;
+&lt;p class=&quot;shop-text6&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&#39;&#39;(text-style:&quot;underline&quot;)[The Tumble Horn]&#39;&#39;
 
  - 6 tumbleweed ($Tumbleweed/6)
 
-(if: $Tumbleweed &gt; 6)[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $HornChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$HornChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;TumbleHorn&quot;)(go-to:&quot;Ending&quot;)](if:$HornChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[Can&#39;t afford weapon]
-]]))
+(if: $Tumbleweed &gt; 5)[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $HornChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$HornChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;TumbleHorn&quot;)(go-to:&quot;Ending&quot;)](if:$HornChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[//Can&#39;t afford weapon//]
+]]]))
 
 
 (goto:&quot;StreetSetup&quot;)</tw-passagedata><tw-passagedata pid="38" name="Street" tags="Area" position="1025,150" size="100,100">&lt;div class=&quot;container&quot;&gt;
@@ -2220,7 +2346,7 @@ $TimeLeft hours till the duel
 
 (set: $Street4 to (macro: [(output:)[|Street4b&gt;[&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SwabBallTransparent.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; Swab-Ball John: Weeeehhhhllllllll, howdy Mr. Spirit of the West. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street4c)(hide:?Street4b)]]|Street4c)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SwabBallTransparent.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; Swab-Ball John: How’s you on this fine day?(link:&quot;\n \n &gt;Quite fine&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street4d)(hide:?Street4c)]]|Street4d)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SwabBallTransparent.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; Swab-Ball John: You know Mr. Spirit, you reminds me of another feller I saw about a day ago. Same clothes, same hat. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street4e)(hide:?Street4d)]]|Street4e)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SwabBallTransparent.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; Swab-Ball John: Quite the amusin’ coincidence ain’t it. But what really gets me is how every other day there’s a duel that happens here on the main street and our population still stays the same! (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street4f)(hide:?Street4e)]]|Street4f)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SwabBallTransparent.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; Swab-Ball John: HEHEHEOHHEOHEHEOHOOHEHEOHHEHEOHEHHO (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street4g)(hide:?Street4f)]]|Street4g)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SwabBallTransparent.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; Swab-Ball John begins laughing so hard he falls off of his rocking chair. He begins rambling out gibberish as he rolls in the dirt laughing, wild eyed, and crazed. You want to leave but the nonsense has you mesmerized. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street4h)(hide:?Street4g)]]|Street4h)[An hour goes by and you regain your mind and decide you have bigger fish to fry. (click:?page)[(show: ?Street4i)(hide:?Street4h)]]|Street4i)[(set:$Ramblings to $Ramblings + 1)(set:$LastVisited to 60)(go-to:&quot;StreetTime&quot;)(hide:?Street4i)]]]))
 
-(set: $Street5False to (macro: [(output:)[|Street5b&gt;[Pat: Hello there. I’m not in the best position to talk at the moment. Would you please help me carry these hats to the inn? (link:&quot;\n &gt;Fer’ Shur&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street5c)(hide:?Street5b)](link:&quot;\n &gt;Nuh’ Uh&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street5c)(hide:?Street5b)]]|Street5c)[Pat: Thank you very much. Now if you could take this half. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street5d)(hide:?Street5c)]]|Street5d)[You walk with Pat for a while in silence. When you finally arrive at the inn she takes the hats back. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street5z)(hide:?Street5d)]]|Street5z)[Pat: Your help was very much appreciated. As a token of thanks take this.(link:&quot;\n \n &gt;You obtained a Hat!&quot;)[(set:$Hats to $Hats + 1)(set:$LastVisited to 30)(set:$HatCarry to true)(go-to:&quot;StreetTime&quot;)]]|Street5x)[Pat sighs and continues walking. You think she’s tired. (click:?page)[(set:$HatCarry to true)(go-to:&quot;StreetTime&quot;)]]
+(set: $Street5False to (macro: [(output:)[|Street5b&gt;[Pat: Hello there. I’m not in the best position to talk at the moment. Would you please help me carry these hats to the inn? (link:&quot;\n &gt;Fer’ Shur (30 minutes)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street5c)(hide:?Street5b)](link:&quot;\n &gt;Nuh’ Uh&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street5c)(hide:?Street5b)]]|Street5c)[Pat: Thank you very much. Now if you could take this half. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street5d)(hide:?Street5c)]]|Street5d)[You walk with Pat for a while in silence. When you finally arrive at the inn she takes the hats back. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street5z)(hide:?Street5d)]]|Street5z)[Pat: Your help was very much appreciated. As a token of thanks take this.(link:&quot;\n \n &gt;You obtained a Hat!&quot;)[(set:$Hats to $Hats + 1)(set:$LastVisited to 30)(set:$HatCarry to true)(go-to:&quot;StreetTime&quot;)]]|Street5x)[Pat sighs and continues walking. You think she’s tired. (click:?page)[(set:$HatCarry to true)(go-to:&quot;StreetTime&quot;)]]
 ]]))
 
 (set: $Street5True to (macro: [(output:)[|Street5a&gt;[Nobody is around]
