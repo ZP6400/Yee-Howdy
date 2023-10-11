@@ -134,6 +134,18 @@ tw-sidebar {
   margin: 312px 0px 0px 462px;
 }
 
+.start-text2 {
+  position: absolute;
+  z-index: 1;
+  margin: 275px 0px 0px 482px;
+}
+
+.start-text2-win {
+  position: absolute;
+  z-index: 1;
+  margin: 361.5px 0px 0px 482px;
+}
+
 .textbox {
    position: absolute;
    z-index: 2;
@@ -243,6 +255,61 @@ tw-sidebar {
 }
 
 
+.end-title-text {
+  position: absolute;
+  z-index: 0;
+  margin: -50px 0px 0px 75px;
+  -webkit-text-stroke: 2px black;
+}
+
+.end-title-text-tumb {
+  position: absolute;
+  z-index: 0;
+  margin: -50px 0px 0px -175px;
+  -webkit-text-stroke: 2px black;
+  list-style-type:none;
+  width:136%;
+  margin-right: fixed;
+  padding: 0;
+}
+
+.end-title-text-pal {
+  position: absolute;
+  z-index: 0;
+  margin: -50px 0px 0px -165px;
+  -webkit-text-stroke: 2px black;
+  list-style-type:none;
+  width:136%;
+  margin-right: fixed;
+  padding: 0;
+}
+
+.end-title-text-lose {
+  position: absolute;
+  z-index: 0;
+  margin: -50px 0px 0px 120px;
+  -webkit-text-stroke: 2px black;
+}
+
+.end-title-text-win {
+  position: absolute;
+  z-index: 0;
+  margin: -10px 0px 0px 40px;
+  -webkit-text-stroke: 2px black;
+}
+
+.end-title-text-fool {
+  position: absolute;
+  z-index: 0;
+  margin: -50px 0px 0px -175px;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 2px black;
+  list-style-type:none;
+  width:136%;
+  margin-right: fixed;
+  padding: 0;
+}
+
 .title-text {
   position: absolute;
   z-index: 0;
@@ -326,6 +393,11 @@ tw-sidebar {
 .start-badge {
   position: absolute;
   margin: 235px 0px 0px 290px;
+}
+
+.start-badge-win {
+  position: absolute;
+  margin: 177px 0px 0px 290px;
 }
   
 
@@ -478,51 +550,51 @@ p {
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="AlleywaySetup" tags="Setup" position="1350,1000" size="100,100">Loading 9/10
 
 (set: $AlleywaySetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |AlleywaySetting&gt;[($Alleyway1:)]
 ]]))
 
 (set: $AlleywaySetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |AlleywaySetting&gt;[($Alleyway2:)]
 ]]))
 
 
 (set: $AlleywaySetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |AlleywaySetting&gt;[(if:$StoppedHorseNapping is false)[($Alleyway3:)](else:)[($Alleyway1:)]]
 ]]))
 
@@ -617,7 +689,7 @@ $TimeLeft hours left]
 
 &lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/SuperTextboxLand.png class=&quot;textbox&quot; width=&quot;1400&quot; height=&quot;260&quot;&gt;
 
-&lt;p class=&quot;alt-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;alt-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 (track: &#39;yeHow&#39;, &#39;play&#39;)(track: &#39;yeHow&#39;, &#39;loop&#39;, true)|TheSun&gt;[The sun was moseying up to noon when you see them. Your one and only pardner, Jeremiah, and Deadeye Dan sidling up to him. Jeremiah spots you, a look of relief washing over his face as he runs behind you. Everything is happening all over again.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?DeadeyeDans)(hide:?TheSun)]]|DeadeyeDans)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt;Deadeye Dan’s eyes track Jeremiah over to you and slowly walks over. He gets up close to you and you can feel his breath on your stubble. He stares into your eyes for a second and then yells:(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?SOYER)(hide:?DeadeyeDans)]]|SoYer)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Deadeye Dan:&#39;&#39; SO YER HIS PARDNER??! WHY JEREMIAH YOU CAN DO BEDDER T’AN DAT! COME BE MY POOKIE BEAR.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?IUh)(hide:?SOYER)]]|IUh)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/JerimiahT.png class=&quot;fade-alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Jeremiah:&#39;&#39; I… uhh…(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?FineThen)(hide:?IUh)]]|FineThen)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/JerimiahT.png class=&quot;fade-alt-character&quot; width=&quot;575&quot; height=&quot;600&quot; animation=&quot;fadeOut 1s&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; FINE THEN, YOU. YEAH NO EYES. I CHALLENGE YA TO A DUEL!!!(link:&quot;\n\n &gt;GASP&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Choice)(hide:?FineThen)]]|Choice)[(link:&quot;&gt;Fer&#39;sur \n\n&quot;)[(hide:?Choice)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?NoonSoon)](link:&quot;&gt;Nuh&#39; uh \n\n&quot;)[(hide:?Choice)(go-to:&quot;Arrested&quot;)]]|NoonSoon)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; NOON TAHMORROW AT THE MAIN ROAD.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Wanders)(hide:?NoonSoon)]]|Wanders)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; Deadeye Dan wanders off to the saloon&#39;s inn, and then it’s just you and Jeremiah.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Dooel)(hide:?Wanders)]]|Dooel)[&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/JerimiahT.png class=&quot;fade-alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Jeremiah:&#39;&#39; How’reyaguna dooel witoutaguhn?(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Guhn)(hide:?Dooel)]]|Guhn)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/JerimiahT.png class=&quot;alt-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Jeremiah:&#39;&#39; Evehrybudy ‘n Tumble Town has an extra guhn or five. If ya need any help lemme know. I’ll be ere till 1.(click:?page)[(hide:?Guhn)(go-to:&quot;StartSetup&quot;)]]
 
 (link: &quot;&gt;Get Right to Business (Skip intro)&quot;)[(go-to:&quot;StartSetup&quot;)]
@@ -641,19 +713,21 @@ $TimeLeft hours left]
 (track: &#39;truth&#39;, &#39;play&#39;)(track: &#39;truth&#39;, &#39;loop&#39;, true)|TheSun2&gt;[You’re compelled by your legally binding contract to go to the main road and before you know it you’re there. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?TheSun)(hide:?TheSun2)]]|TheSun)[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Best of luck to ya both. Are ya ready?(link:&quot;\n\n &gt;More ready than I&#39;ll ever been&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?DeadeyeDans)(hide:?TheSun)]]|DeadeyeDans)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Wait... what&#39;s that weapon ya have there?(link:&quot;\n\n &gt;A barrel of the strong stuff&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?SOYER)(hide:?DeadeyeDans)]]|SoYer)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; CUT THAT OUT RIGHT NOW! I&#39;LL HAVE YA ARRESTED RIGHT NOW! DON&#39;T YOU DARE SET THAT OFF-(link:&quot;\n\n &gt;Set the barrel off&quot;)[(track: &#39;boom&#39;, &#39;play&#39;)(hide:?SoYer)(go-to:&quot;BoomScreen&quot;)]]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="BoomScreen" tags="EndScreen" position="1450,100" size="100,100">&lt;div class=&quot;container&quot;&gt;
-&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159512750515560528/image0.jpg?ex=65314b66&amp;is=651ed666&amp;hm=612e10ce8cee012723b81fc65cb1655127ba0b1a97afc76e1e4cfd605cb1ebcd&amp; class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Title.jpg class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
 
-&lt;p class=&quot;end-text&quot; style=&quot;text-align:center;font-family:texas-tango;font-size:65px&quot;&gt;
-The entire town exploded!
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Start-Pic.png class=&quot;start-badge&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
 
-It did the job
+&lt;p class=&quot;end-title-text&quot; style=&quot;text-align:center;color:orange;font-family:rio-grande;font-size:66px&quot;&gt;
+You Got the (text-style:&quot;underline&quot;)[&#39;&#39;BOOM&#39;&#39;] Ending!
 
-Weapon: $Weapon
+//The entire town exploded!//
+
+Weapon - $Weapon
 &lt;/p&gt;
 (set: $WentBoom to true)
 
-&lt;p class=&quot;end-text2&quot; style=&quot;font-family:texas-tango;font-size:50px&quot;&gt;
-(link:&quot;&gt;Maybe exploding the town was a bad idea...&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
+&lt;p class=&quot;start-text2&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
+(link:&quot;New \n Day&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Demo" tags="Ending" position="1900,575" size="100,100">Play the full game to see what happens!</tw-passagedata><tw-passagedata pid="9" name="Ending" tags="Ending" position="1775,200" size="100,100">(masteraudio: &#39;stopall&#39;)
 (if:$FedAmmo is true)[
@@ -716,12 +790,12 @@ Weapon: $Weapon
 
 &lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/ShopMenu.png class=&quot;shopbox&quot; width=&quot;1500&quot; height=&quot;900&quot;&gt;
 (if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun-shop&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1160990901187907614/IMG_0111.png?ex=6536ac09&amp;is=65243709&amp;hm=1120cf7543a76ab1c298ca43f3faee029ad45420eb56039813d4212ff1db3c19&amp; class=&quot;hud-moon-shop&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text-shop&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text-shop&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Gun Shop(set: $LastVisited to 10)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text-shop&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text-shop&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Gun Shop(set: $LastVisited to 10)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
@@ -730,7 +804,7 @@ $TimeLeft hours left]
 &lt;!--(if:visits is 1)[(Location desciption]
 --&gt;
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text2&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text2&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 ($PlaySong:&quot;gunSong&quot;)(if:$Timepassed &lt; 7)[($Gunshop0:)](else-if:$Timepassed &lt; 11)[($Gunshop1:)](else-if:$Timepassed &lt; 16)[(if:$StolenKey is true)[(if:$StolenAmmo is false)[($Gunshop2False:)](else:)[($Gunshop2True:)]](else:)[($Gunshop1:)]](else-if:$Timepassed is 16)[($Gunshop3:)](else-if:$Timepassed is 17)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($Gunshop0:)]](else-if:$Timepassed &lt; 21)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($Gunshop5:)]](else-if:$Timepassed &lt; 24)[(if:$StolenKey is true)[($Gunshop4:)](else:)[($Gunshop0:)]](else:)[(go-to: &quot;Ending&quot;)]
 
 ($BuyGun:)</tw-passagedata><tw-passagedata pid="13" name="GunshopSetup" tags="Setup" position="1475,1000" size="100,100">Loading 10/10
@@ -840,36 +914,36 @@ $TimeLeft hours left]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="HatShopSetup" tags="Setup" position="1350,750" size="100,100">Loading 3/10
 
 (set: $ShopSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |ShopSetting&gt;[(if:$HatOrders is false)[You enter the hat shop and see Pat smithing away at her hats.(link:&quot;\n \n &gt;Talk to Pat&quot;)[(hide:?ShopSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Hat1True:)]]|S1F)[($Hat1False:)]
 ]]))
 
 
 
 (set: $ShopSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |StreetSetting&gt;[The store is closed.
 (if:$HatShopVisit is false)[($GetTumbleweed: &quot;HatShopTime&quot;)(set:$HatShopVisit to true)]]]
 ]))
@@ -877,29 +951,29 @@ $TimeLeft hours left]
 
 
 (set: $ShopSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |ShopSetting&gt;[(if:$StoreHours is false)[You enter the store and see Pat laying out some hattatonium near the forge. She turns to see you and waves before taking a spiffy new hat off the anvil. (link:&quot;Talk to Pat&quot;)[(hide:?ShopSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Hat3True:)]]|S1F)[($Hat3False:)]
 ]]))
 
 
-(set: $Hat1False to (macro: [(output:)[|Hat1b&gt;[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;700&quot;/&gt;&lt;/div&gt; &#39;&#39;Pat:&#39;&#39;  Howdy there. I’m a bit preoccupied, do you think you could wait but a moment? (link:&quot;\n \n &gt;Wait&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1ba)(hide:?Hat1b)]]|Hat1ba)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt;&lt;/div&gt; You watch Pat hammer away at the hattatonium to forge a hat. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1c)(hide:?Hat1ba)]]|Hat1c)[Once she’s done, she puts the hat on and turns to you. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1d)(hide:?Hat1c)]]|Hat1d)[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt;&lt;/div&gt; &#39;&#39;Pat:&#39;&#39;  I’m so terribly sorry, but I have a request for you. Would you be able to take down the orders of the rest of the town? I need to fulfill the daily hat orders, but have no way to collect them at the moment. (link:&quot;\n &gt;Fer&#39; Shur (30 minutes)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1e)(hide:?Hat1d)](link:&quot;\n &gt;Nuh&#39; Uh&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1x)(hide:?Hat1d)]]|Hat1e)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt; &#39;&#39;Pat:&#39;&#39;  Splendid, thank you very much. Here are the order forms. Over out back, there’s the hat tubes. Put a form in each of them and then pull the lever. Afterwards, wait for about 15 minutes and the forms should come back completed. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1f)(hide:?Hat1e)]]|Hat1f)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt;&lt;/div&gt; You venture out back and put the forms in the large machine. You pull the lever and the forms get whisked away down into the ground. After about 20 minutes of waiting the forms come back one by one. You take them back in to Pat. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1z)(hide:?Hat1f)]]|Hat1z)[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt;&lt;/div&gt; &#39;&#39;Pat:&#39;&#39;  Thank you very much. Here, take this for the trouble. (link:&quot;\n \n &gt;You obtained a hat!&quot;)[(set:$Hats to $Hats + 1)(set:$LastVisited to 30)(set:$HatOrders to true)(go-to:&quot;HatShopTime&quot;)]]|Hat1x)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt; &#39;&#39;Pat:&#39;&#39;  Oh, that’s quite alright. If that’s all, I need to focus on my smithing. Thank you anyway. (click:?page)[(set:$HatOrders to true)(hide:?Hat1x)(go-to:&quot;HatShopTime&quot;)]]
+(set: $Hat1False to (macro: [(output:)[|Hat1b&gt;[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Pat:&#39;&#39;  Howdy there. I’m a bit preoccupied, do you think you could wait but a moment? (link:&quot;\n \n &gt;Wait&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1ba)(hide:?Hat1b)]]|Hat1ba)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; You watch Pat hammer away at the hattatonium to forge a hat. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1c)(hide:?Hat1ba)]]|Hat1c)[Once she’s done, she puts the hat on and turns to you. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1d)(hide:?Hat1c)]]|Hat1d)[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Pat:&#39;&#39;  I’m so terribly sorry, but I have a request for you. Would you be able to take down the orders of the rest of the town? I need to fulfill the daily hat orders, but have no way to collect them at the moment. (link:&quot;\n &gt;Fer&#39; Shur (30 minutes)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1e)(hide:?Hat1d)](link:&quot;\n &gt;Nuh&#39; Uh&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1x)(hide:?Hat1d)]]|Hat1e)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Pat:&#39;&#39;  Splendid, thank you very much. Here are the order forms. Over out back, there’s the hat tubes. Put a form in each of them and then pull the lever. Afterwards, wait for about 15 minutes and the forms should come back completed. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1f)(hide:?Hat1e)]]|Hat1f)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; You venture out back and put the forms in the large machine. You pull the lever and the forms get whisked away down into the ground. After about 20 minutes of waiting the forms come back one by one. You take them back in to Pat. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat1z)(hide:?Hat1f)]]|Hat1z)[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Pat:&#39;&#39;  Thank you very much. Here, take this for the trouble. (link:&quot;\n \n &gt;You obtained a hat!&quot;)[(set:$Hats to $Hats + 1)(set:$LastVisited to 30)(set:$HatOrders to true)(go-to:&quot;HatShopTime&quot;)]]|Hat1x)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Pat:&#39;&#39;  Oh, that’s quite alright. If that’s all, I need to focus on my smithing. Thank you anyway. (click:?page)[(set:$HatOrders to true)(hide:?Hat1x)(go-to:&quot;HatShopTime&quot;)]]
 ]]))
 
 (set: $Hat1True to (macro: [ (output:)[|Hat1true&gt;[You see Pat intently focused on her smithing and the sounds of clangs can be heard all throughout the building. You shouldn’t bother her.]
 ]]))
 
-(set: $Hat3False to (macro: [(output:)[|Hat3b&gt;[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt;&lt;/div&gt; &#39;&#39;Pat:&#39;&#39;  I heard that you have a duel with Dan today. Since you’ve never ordered any hats, I thought you might accept this one for good luck in your duel. (link:&quot;\n &gt;Accept it (20 minutes)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat3c)(hide:?Hat3b)](link:&quot;\n &gt;Deny it&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat3x)(hide:?Hat3b)]]|Hat3c)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt; You take off your old hat and put the new one on. Pat smiles and then runs into the back blushing. (link:&quot;\n \n &gt;You replaced your hat and obtained a Hat!&quot;)[(set:$Hats to $Hats + 1)(set:$LastVisited to 20)(set:$StoreHours to true)(go-to:&quot;HatShopTime&quot;)]]|Hat3x)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;650&quot;/&gt; You see tears form in Pat’s eyes before she runs to the back of the store with the hat. You think you should leave. (click:?page)[(set:$StoreHours to true)(goto:&quot;HatShopTime&quot;)(hide:?Hat3x)]]
+(set: $Hat3False to (macro: [(output:)[|Hat3b&gt;[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Pat:&#39;&#39;  I heard that you have a duel with Dan today. Since you’ve never ordered any hats, I thought you might accept this one for good luck in your duel. (link:&quot;\n &gt;Accept it (20 minutes)&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat3c)(hide:?Hat3b)](link:&quot;\n &gt;Deny it&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Hat3x)(hide:?Hat3b)]]|Hat3c)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; You take off your old hat and put the new one on. Pat smiles and then runs into the back blushing. (link:&quot;\n \n &gt;You replaced your hat and obtained a Hat!&quot;)[(set:$Hats to $Hats + 1)(set:$LastVisited to 20)(set:$StoreHours to true)(go-to:&quot;HatShopTime&quot;)]]|Hat3x)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/PatT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; You see tears form in Pat’s eyes before she runs to the back of the store with the hat. You think you should leave. (click:?page)[(set:$StoreHours to true)(goto:&quot;HatShopTime&quot;)(hide:?Hat3x)]]
 ]]))
 
 (set: $Hat3True to (macro: [ (output:)[|Hat3true&gt;[Pat is in the back of the store.]
@@ -979,20 +1053,21 @@ $TimeLeft hours left]
 [
       (go-to: &quot;HatShop&quot;)
 ]</tw-passagedata><tw-passagedata pid="18" name="IdiotScreen" tags="EndScreen" position="1425,200" size="100,100">&lt;div class=&quot;container&quot;&gt;
-&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159512750515560528/image0.jpg?ex=65314b66&amp;is=651ed666&amp;hm=612e10ce8cee012723b81fc65cb1655127ba0b1a97afc76e1e4cfd605cb1ebcd&amp; class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Title.jpg class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
 
-&lt;p class=&quot;end-text&quot; style=&quot;text-align:center;font-family:texas-tango;font-size:65px&quot;&gt;
-You got shot in the face
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Start-Pic.png class=&quot;start-badge&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
 
-What did you think would happen?
+&lt;p class=&quot;end-title-text-fool&quot; style=&quot;text-align:center;color:orange;font-family:rio-grande;font-size:66px&quot;&gt;
+You Got the (text-style:&quot;underline&quot;)[&#39;&#39;Foolish&#39;&#39;] Ending!
 
-Weapon: $Weapon
+//What did you think would happen?//
+
+Weapon - $Weapon
 &lt;/p&gt;
-
 (set: $WasStupid to true)
 
-&lt;p class=&quot;end-text2&quot; style=&quot;font-family:texas-tango;font-size:50px&quot;&gt;
-(link:&quot;&gt;If only I remembered to grab a weapon...&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
+&lt;p class=&quot;start-text2&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
+(link:&quot;New \n Day&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Inn" tags="Area" position="1050,675" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
@@ -1005,86 +1080,86 @@ Weapon: $Weapon
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="InnSetup" tags="Setup" position="1475,875" size="100,100">Loading 7/10
 
 (set: $InnSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |InnSetting&gt;[A room is reserved for you to sleep in and Deadeye Dan is in the lobby. (if:$Smacktalk is false)[(link:&quot;\n \n &gt;Walk up to Dan&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[(link:&quot;\n \n &gt;Walk up to Dan&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3F)]] (link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Inn1False:)]|S2F)[($Sleep:&quot;&quot;)]|S3F)[($Inn1True:)]
 ]]))
 
 
 (set: $InnSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |InnSetting&gt;[Deadeye Dan has locked the door of his room. There is a room reserved for you to sleep in. (if:$JerimiahSleep is false)[Jeremiah is in the lobby with his head in his hands. (link:&quot;\n \n &gt;Talk to Jerimiah (30 minutes)&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Inn2True:)] (link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Inn2False:)]|S2F)[($Sleep:&quot;&quot;)]
 ]]))
 
 
 (set: $InnSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |InnSetting&gt;[There is a room reserved for you to sleep in (link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)](if:$InnVisit is false)[(set:$InnVisit to true)($GetTumbleweed: &quot;InnTime&quot;)]]|S2F)[($Sleep:&quot;&quot;)]
 ]]))
 
 
 (set: $InnSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |InnSetting&gt;[There is a room reserved for you to sleep in. (if:$InnDelivery is false)[Pat is at the front of the inn placing hats in the mailboxes for each room. She finishes up with one hat remaining. (link:&quot;\n &gt;Talk to Pat&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](link:&quot;\n &gt;Go to your room&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Inn3False:)]|S2F)[($Sleep:&quot;&quot;)]
 ]]))
 
 
 (set: $InnSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |InnSetting&gt;[You see Jeremiah over on the bench eating hay. It looks like he’s stress eating again. (link:&quot;\n \n &gt;Talk to Jeremiah (Until Duel)&quot;)[(hide:?InnSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]]|S1F)[($Inn4:)]
 ]]))
 
@@ -1224,35 +1299,38 @@ $TimeLeft hours left]
 (track: &#39;truth&#39;, &#39;play&#39;)(track: &#39;truth&#39;, &#39;loop&#39;, true)|TheSun2&gt;[You’re compelled by your legally binding contract to go to the main road and before you know it you’re there, but as you arrive, Abraham drags you over to his office. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?TheSun)(hide:?TheSun2)]]|TheSun)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Damn it, son let me check your pockets. I need to check everyone. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?DeadeyeDans)(hide:?TheSun)]]|DeadeyeDans)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; ……..(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?SOYER)(hide:?DeadeyeDans)]]|SoYer)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Son. Do you have anything you would like to confess to?(link:&quot;\n\n &gt;Fer&#39; Shur&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?IUh)(hide:?SOYER)]]|IUh)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; I trust you understand that you’re going to be spending a while in the cell.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?FineThen)(hide:?IUh)]]|FineThen)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; You nod dejectedly.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?NoonSoon)(hide:?FineThen)]]|NoonSoon)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; You may see yourself in.(click:?page)[(track: &#39;cuff&#39;, &#39;playwhenpossible&#39;)(show:?Wanders)(hide:?NoonSoon)]]|Wanders)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; You walk slowly with your head down into the cell. The sheriff closes the door behind you and locks it. You sit and think about how you ended up here. Later, Cassi stops by and looks at you disappointedly.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Dooel)(hide:?Wanders)]]|Dooel)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39; You deserve to be held in here thief.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Guhn)(hide:?Dooel)]]|Guhn)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; You cringe hearing someone call you thief.(click:?page)[(hide:?Guhn)(show:?Crin)]]|Crin)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; You spend the next 20 years in prison.(click:?page)[(hide:?Crin)(go-to:&quot;JailScreen&quot;)]]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="JailScreen" tags="EndScreen" position="1525,200" size="100,100">&lt;div class=&quot;container&quot;&gt;
-&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159512750515560528/image0.jpg?ex=65314b66&amp;is=651ed666&amp;hm=612e10ce8cee012723b81fc65cb1655127ba0b1a97afc76e1e4cfd605cb1ebcd&amp; class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Title.jpg class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
 
-&lt;p class=&quot;end-text&quot; style=&quot;text-align:center;font-family:texas-tango;font-size:65px&quot;&gt;
-&#39;&#39;You got arrested!
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Start-Pic.png class=&quot;start-badge&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
 
-(if:$Caught is true)[You Filthy Thief](else:)[You Coward]
+&lt;p class=&quot;end-title-text&quot; style=&quot;text-align:center;color:orange;font-family:rio-grande;font-size:66px&quot;&gt;
+You Got the (text-style:&quot;underline&quot;)[&#39;&#39;Jailbird&#39;&#39;] Ending!
+
+(if:$Caught is true)[//You filthy thief//](else:)[//You coward//]
 
 Weapon: $Weapon&#39;&#39;
 &lt;/p&gt;
-
 (set: $GotArrested to true)
 
-&lt;p class=&quot;end-text2&quot; style=&quot;font-family:texas-tango;font-size:50px&quot;&gt;
-(link:&quot;&gt;I won&#39;t mess up again...&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
+&lt;p class=&quot;start-text2&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
+(link:&quot;New /n Day&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="LoseScreen" tags="EndScreen" position="1325,0" size="100,100">&lt;div class=&quot;container&quot;&gt;
-&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159512750515560528/image0.jpg?ex=65314b66&amp;is=651ed666&amp;hm=612e10ce8cee012723b81fc65cb1655127ba0b1a97afc76e1e4cfd605cb1ebcd&amp; class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Title.jpg class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
 
-&lt;p class=&quot;end-text&quot; style=&quot;text-align:center;font-family:texas-tango;font-size:65px&quot;&gt;
-You lost the duel. . . 
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Start-Pic.png class=&quot;start-badge&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
 
-(if:$Weapon is &quot;Freebie&quot;)[Cheaped out](if:$Weapon is &quot;Monica&quot;)[Horse???????](if:$Weapon is &quot;Sword&quot;)[Swab Ball let you down...]
+&lt;p class=&quot;end-title-text-lose&quot; style=&quot;text-align:center;color:orange;font-family:rio-grande;font-size:66px&quot;&gt;
+You Got the (text-style:&quot;underline&quot;)[&#39;&#39;Dead&#39;&#39;] Ending!
 
-Weapon: $Weapon
+(if:$Weapon is &quot;Freebie&quot;)[//Cheaped out//](if:$Weapon is &quot;Monica&quot;)[//Horse???????//](if:$Weapon is &quot;Sword&quot;)[//Swab Ball let you down...//]
+
+Weapon - $Weapon
 &lt;/p&gt;
 (set: $Lost to true)
 
-&lt;p class=&quot;end-text2&quot; style=&quot;font-family:texas-tango;font-size:50px&quot;&gt;
-(link:&quot;&gt;I won&#39;t fail this time...&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
+&lt;p class=&quot;start-text2&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
+(link:&quot;New \n Day&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Loss" tags="Ending" position="1650,450" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
@@ -1268,7 +1346,7 @@ Weapon: $Weapon
 
 &lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Map.jpg class=&quot;map-background&quot; width=&quot;1700&quot; height=&quot;920&quot;&gt;
 (track: &#39;map&#39;, &#39;playwhenpossible&#39;)
-&lt;p class=&quot;map-text&quot; style=&quot;text-align:left;font-size:29px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;map-text&quot; style=&quot;text-align:left;font-size:29px;font-family:kirsty&quot;&gt;
 $Hour:$Minute(if: $Minute &lt;10)[0] $M
 
 (text-style:&quot;bold&quot;,&quot;underline&quot;)[&#39;&#39;Travel:&#39;&#39;]
@@ -1327,144 +1405,144 @@ Total Items: $TotalItems
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="RanchSetup" tags="Setup" position="1350,875" size="100,100">Loading 6/10
 
 (set: $RanchSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |RanchSetting&gt;[Jeremiah isn&#39;t at the ranch. Monica the horse is staring at you. (link:&quot; \n \n &gt;Walk up to Monica&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]]|S1F)[($MonicaFeed:)]
 ]]))
 
 
 
 (set: $RanchSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |RanchSetting&gt;[Monica the Horse is staring at you and (if:$RanchWork is false)[Jeremiah is working at the ranch. (link:&quot;\n \n &gt;Walk up to Jerimiah&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Ranch1True:)] (link:&quot; \n \n &gt;Walk up to Monica&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Ranch1False:)]|S2F)[($MonicaFeed:)]
 ]]))
 
 
 
 (set: $RanchSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |RanchSetting&gt;[Abraham seems to be looking for something, Monica is sleeping in the barn, and (if:$RanchWork is false)[Jeremiah is working at the ranch. (link:&quot;\n \n &gt;Walk up to Jerimiah&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Ranch1True:)] (link:&quot; \n &gt;Walk up to Abraham&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Ranch1False:)]|S2F)[(if:$FoundChicken is false)[($Ranch2:)](else:)[($Ranch2True:)]]
 ]]))
 
 
 
 (set: $RanchSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |RanchSetting&gt;[(if:$StoppedHorseNapping is false)[You hear scuffling and shuffling by the barn and walk over to see Swab-Ball John tying up Monica and whispering under his breath. He notices you and turns around.(link:&quot;\n \n &gt;What in tarnations!?&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($MonicaSleep:)]]|S1F)[($Ranch3:)]
 ]]))
 
 
 
 (set: $RanchSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |RanchSetting&gt;[(if:$StoppedHorseNapping is false)[($MonicaGone:)](else:)[($MonicaSleep:)]]
 (if:$RanchVisit is false)[($GetTumbleweed: &quot;RanchTime&quot;)(set:$RanchVisit to true)]
 ]]))
 
 
 (set: $RanchSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |RanchSetting&gt;[You spot Abraham in the distance putting the chickens back into their pen. He looks content as he leaves. (if:$StoppedHorseNapping is false)[($MonicaGone:)](else:)[($MonicaSleep:)]]
 (if:$RanchVisit is false)[($GetTumbleweed: &quot;RanchTime&quot;)(set:$RanchVisit to true)]
 ]]))
 
 
 (set: $RanchSetting7 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |RanchSetting&gt;[(if:$StoppedHorseNapping is false)[($MonicaGone:)(if:$RanchVisit is false)[($GetTumbleweed: &quot;RanchTime&quot;)(set:$RanchVisit to true)]
 ](else:)[Monica is staring directly at you. (link:&quot;\n \n &gt;Walk up to her&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S2F)[($MonicaFeed:)]
 ]]))
 
 
 (set: $RanchSetting8 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |RanchSetting&gt;[Jerimiah is in the distance and (if:$StoppedHorseNapping is false)[Monica is nowhere to be seen](else:)[Monica is staring into your soul. (link: &quot;\n \n Talk to Monica&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)] - ] (link: &quot;\n &gt;Mosey on over to Jerimiah&quot;)[(hide:?RanchSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]] |S1F)[($MonicaFeed:)]|S2F)[(if:$ChickenGot is false)[($Ranch5False:)](else:)[($Ranch5True:)]]
 ]]))
 
@@ -1581,53 +1659,53 @@ $TimeLeft hours left]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="SaloonSetup" tags="Setup" position="1225,875" size="100,100">Loading 5/10
 
 (set: $SaloonSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[You enter the saloon and see Samson behind the counter. (link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)]]|S2)[($Saloon1:)]]
 ]))
 
 
 (set: $SaloonSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[(if:$FirstDrink is false)[You enter the dimly lit saloon and Samson waves to you. (link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon2True:)]]|S1F)[($Saloon2False:)]
 ]]))
 
 
 
 (set: $SaloonSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |S1F)[($Saloon3Won:)]|S2F)[($Saloon3Boom:)]|S3F)[($Saloon3Friends:)]|S4F)[($Saloon3Lost:)]|S5F)[($Saloon3Stupid:)]|S6F)[($Saloon3Tumble:)]|S7F)[($Saloon3Arrested:)]|S8F)[($Saloon3Done:)]
 
 (if:$Won is false)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)](else-if:$WentBoom is false)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)] (else-if:$MadeFriends is false)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3F)] (else-if:$Lost is false)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S4F)] (else-if:$WasStupid is false)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S5F)] (else-if:$TumbledAround is false)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S6F)] (else-if:$GotArrested is false)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S7F)] (else:)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S8F)]
@@ -1635,162 +1713,162 @@ $TimeLeft hours left]
 
 
 (set: $SaloonSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[(if:$SecondDrink is false)[You enter the saloon and Samson waves to you. (link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon4True:)]]|S1F)[($Saloon4False:)]
 ]]))
 
 
 
 (set: $SaloonSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[]|S1F)[($Saloon5Secret:)]|S7F)[($Saloon5:)](if: $Won and $Lost and $WentBoom and $GotArrested and $MadeFriends and $WasStupid and $TumbledAround)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)](else:)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S7F)]
 ]]))
 
 
 
 (set: $SaloonSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[You see Cassi surrounded by empty bottles of whiskey. She’s still going, too. (if:$ThirdDrink is false)[Samson waves to you.(link:&quot;\n \n &gt;Talk to Samson&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon6True:)](link:&quot;\n &gt;Talk to Cassi&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Saloon6False:)]|S2F)[(if:$DrinkingGame is false)[($Saloon6:)](else:)[($Saloon2Poo:)]]
 ]]))
 
 
 
 (set: $SaloonSetting6a to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[You see Cassi face down, surrounded on all sides by empty whiskey bottles. Samson is currently taking the bottles one by one and placing them in the cleaning rack so he can reuse them. (if:($StolenKey is false) and ($LeftKey is false))[(link:&quot;\n \n &gt;Head over to the table&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6Steal:)]
 ]]))
 
 
 
 (set: $SaloonSetting7 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[You see Cassi face down, surrounded on all sides by empty whiskey bottles. Samson is currently taking the bottles one by one and placing them in the cleaning rack so he can reuse them.(if:($StolenKey is false) and ($LeftKey is false))[(link:&quot;\n \n &gt;Head over to the table&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]]|S1F)[($Saloon6False:)]|S2F)[($Saloon6Steal:)]
 ]]))
 
 
 
 (set: $SaloonSetting8 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[(if:$SaloonDelivery is false)[You see Pat with a frantic look on her face and Samson with a hat that clearly is too small for him. She takes the hat and says something to Samson before heading to the door. Pat tosses the hat into the garbage on her way out. (link:&quot;\n &gt;Take the hat&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[Samson is cleaning the back of the saloon.]]|S1F)[($Saloon8False:)]
 ]]))
 
 
 
 (set: $SaloonSetting9 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[Swab Ball Johnson is sleeping in a corner and (if:$ForthDrink is false)[Samson is behind the counter. (link:&quot;\n \n &gt;Head over to the counter&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Saloon9True:)]]|S1F)[($Saloon9False:)]
 ]]))
 
 
 
 (set: $SaloonSetting10 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[Samson is sleeping behind the counter. (if:$PreparingForDuel is false)[ Deadeye Dan is leaning against the wall in the darkest corner. (link:&quot;\n \n &gt;Talk to Deadeye Dan&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?DanDan)] ](else:)[($Saloon10True:)]]|DanDan)[($Saloon10False:)]
 ]]))
 
 
 
 (set: $SaloonSetting11 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SaloonSetting&gt;[You enter the saloon. Samson waves to you and gives you a warm smile.(if:$PreparingForDuel is false)[ Deadeye Dan is leaning against the wall in the darkest corner. (link:&quot;\n \n &gt;Talk to Deadeye Dan&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?DanDan)]](else:)[($Saloon10True:)] (link:&quot;\n &gt;Head over to the counter&quot;)[(hide:?SaloonSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?FreeDrinks)]]|DanDan)[($Saloon10False:)]|FreeDrinks)[(if: $FifthDrink is false)[($Saloon11False:)](else:)[Samson seems to be preparing for something. (click:?page)[(hide:?FreeDrinks)(go-to:&quot;SaloonTime&quot;)] ]]
 ]]))
 
@@ -1846,7 +1924,7 @@ $TimeLeft hours left]
 (set: $Saloon6True to (macro: [ (output:)[|Saloon6T&gt;[Samson is cleaning up the floor.]]
 ]))
 
-(set: $Saloon6 to (macro: [ (output:)[|Saloon6a&gt;[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39;  Weeelll, if it ain’t the cowboy. *hic* You want to race me? See who can finish a bottle of *hic* whiskey first? (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6b)(hide:?Saloon6a)]]|Saloon6b)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; You’ve seen this before. The last time someone tried to beat her in a drinking game, they were violently drunk as Cassi charged them for her booze.(link:&quot;\n \n &gt;I&#39;ll Pass Cassi&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6c)(hide:?Saloon6b)]]|Saloon6c)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Cassi:&#39;&#39;  Well, *hic* I guess you’re smarter than you look. *hic*(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6d)(hide:?Saloon6b)]]|Saloon6d)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; She looks like she’s only a couple bottles away from passing out. You decide it’s best to leave before she tries to get you to play a drinking game again.(set:$DrinkingGame to true)(click:?page)[(go-to:&quot;SaloonTime&quot;)(hide:?Saloon6d)]
+(set: $Saloon6 to (macro: [ (output:)[|Saloon6a&gt;[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39;  Weeelll, if it ain’t the cowboy. *hic* You want to race me? See who can finish a bottle of *hic* whiskey first? (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6b)(hide:?Saloon6a)]]|Saloon6b)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; You’ve seen this before. The last time someone tried to beat her in a drinking game, they were violently drunk as Cassi charged them for her booze.(link:&quot;\n \n &gt;I&#39;ll Pass Cassi&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6c)(hide:?Saloon6b)]]|Saloon6c)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Cassi:&#39;&#39;  Well, *hic* I guess you’re smarter than you look. *hic*(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6d)(hide:?Saloon6c)]]|Saloon6d)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/CassiT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; She looks like she’s only a couple bottles away from passing out. You decide it’s best to leave before she tries to get you to play a drinking game again.(set:$DrinkingGame to true)(click:?page)[(go-to:&quot;SaloonTime&quot;)(hide:?Saloon6d)]
 ]]]))
 
 (set: $Saloon2Poo to (macro: [ (output:)[|Saloon2T&gt;[You should probably avoid her before she tries to get you to play a drinking game again.before she tries to get you to play a drinking game again.before she tries to get you to play a drinking game again. (click:?page)[(go-to:&quot;SaloonTime&quot;)(hide:?Saloon2T)]]]]))
@@ -1968,120 +2046,120 @@ $TimeLeft hours left]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="35" name="SheriffSetup" tags="Setup" position="1225,1000" size="100,100">Loading 8/10
 
 (set: $SheriffSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SheriffSetting&gt;[(if:$PaperWork is false)[You enter the sheriff’s office to see Abraham bolt upward from his chair. You know he was sleeping, he doesn’t do much else. (link:&quot;\n \n &gt;See what&#39;s up&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](else:)[($Sheriff1True:)]]|S1F)[($Sheriff1False:)]
 ]]))
 
 
 (set: $SheriffSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SheriffSetting&gt;[You see a note saying that Abraham is out doing work and he&#39;ll back at 4. Hopefully he&#39;s not chasing Chickens around again.(if:$SheriffVisit is false)[(set:$SheriffVisit to true)($GetTumbleweed: &quot;SheriffTime&quot;)]]
 ]]))
 
 
 (set: $SheriffSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SheriffSetting&gt;[Abraham is trying to stay awake. (if:$SheriffDelivery is false)[You see Pat handing Abraham a hat. She asks something else but you can’t hear it. (link:&quot;\n \n &gt;Talk to Pat&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]]]|S1F)[($Sheriff3False:)]
 ]]))
 
 
 (set: $SheriffSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SheriffSetting&gt;[Abraham is sleeping on his desk. He&#39;s probably dreaming about eating chicken. (if:$SheriffVisit is false)[(set:$SheriffVisit to true)($GetTumbleweed: &quot;SheriffTime&quot;)]]
 ]]))
 
 
 (set: $SheriffSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SheriffSetting&gt;[There&#39;s a note on Abraham&#39;s desk saying he&#39;ll be back at 8.]
 ]]))
 
 
 (set: $SheriffSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SheriffSetting&gt;[Abraham is trying to stay awake at his desk.(if:$StolenKey is true)[(if: $Complain is false)[Cassi is in the sheriff’s office visibly upset over the keys that //you// took. (link:&quot;\n \n &gt;Listen to Cassi&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]]]]|S1F)[($Sheriff4:)]
 ]]))
 
 
 (set: $SheriffSetting7 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |SheriffSetting&gt;[Sheriff Abraham is sitting out front of his office drinking his coffee quietly. (if:$StolenKey is true)[Cassi is writing a formal complaint (link:&quot;\n &gt;Head over to Cassi&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1F)]](link: &quot;\n \n &gt;Walk up to Abraham&quot;)[(hide:?SheriffSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2F)]]|S1F)[($Sheriff4:)]|S2F)[(if:$Joe is true)[($Sheriff6True:)](else:)[($Sheriff6False:)]]
 ]]))
 
@@ -2295,17 +2373,17 @@ $TimeLeft hours left]
 (set: $BuyGun to (macro:[(output:)[
 (if: ($Timepassed &gt;6) and ($Timepassed &lt;17))[&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text0a&quot; style=&quot;text-align:center;font-size:40px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text0a&quot; style=&quot;text-align:center;font-size:40px;font-family:kirsty&quot;&gt;
 STORE IS CLOSED! COME BACK AT 5:00 AM TO BUY GUNS! DON&#39;T STEAL ANYTHING! IF YOU NEED ME I&#39;M PROBABLY DOWN BY THE SALOON!]&#39;&#39;](else-if: ($StolenAmmo is true) and ($Timepassed &gt; 15))[&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text0b&quot; style=&quot;text-align:center;font-size:40px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text0b&quot; style=&quot;text-align:center;font-size:40px;font-family:kirsty&quot;&gt;
 SOME CROOK BROKE INTO MY SHOP AND STOLE ALL MY AMMO. IF YOU DID THIS, YOU KNOW WHO YOU ARE. IF YOU DIDN&#39;T, GO FIND OUT WHO DID IT. BECAUSE OUR SHERIFF IS TOO LAZY TO FIND OUT.]&#39;&#39;](else-if: ($StolenKey is true) and ($Timepassed &gt; 15))[&#39;&#39;(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text0c&quot; style=&quot;text-align:center;font-size:40px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text0c&quot; style=&quot;text-align:center;font-size:40px;font-family:kirsty&quot;&gt;
 SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;T YOU BREAK INTO MY SHOP! YOU HAD THE KEY! WHY ELSE WOULD YOU STEAL IT!]&#39;&#39;]
 (else:)[
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text1&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text1&quot; style=&quot;text-align:left;font-size:20px;font-family:kirsty&quot;&gt;
 &#39;&#39;(text-style:&quot;underline&quot;)[Ol Reliable]&#39;&#39;
 
  - 14 of any item ($TotalItems/14)
@@ -2314,7 +2392,7 @@ SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;
 
 
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text2&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text2&quot; style=&quot;text-align:left;font-size:20px;font-family:kirsty&quot;&gt;
 &#39;&#39;(text-style:&quot;underline&quot;)[The Looong Gun]&#39;&#39;
 
  - 3 hats ($Hats/3)
@@ -2327,7 +2405,7 @@ SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;
 
 
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text3&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text3&quot; style=&quot;text-align:left;font-size:20px;font-family:kirsty&quot;&gt;
 &#39;&#39;(text-style:&quot;underline&quot;)[The Sunsetter]&#39;&#39;
 
  - 3 Eggs ($Eggs/3)
@@ -2339,7 +2417,7 @@ SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;
 (if: ($Eggs &gt; 2) and ($MiddleFingers &gt; 0) and ($Drinks &gt; 1))[(link: &quot;Buy Weapon&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(dialog: bind $SunsetChoice,&quot;Are you sure you want to buy this weapon? This will cause time to skip all the way to the duel.&quot;, &quot;I am sure&quot;,&quot;No. Go back&quot;) (if:$SunsetChoice is &quot;I am sure&quot;)[(set: $Weapon to &quot;Sunset&quot;)(go-to:&quot;Ending&quot;)](if:$SunsetChoice is &quot;No. Go back&quot;)[(go-to:&quot;GunshopTime&quot;)]]](else:)[//Can&#39;t afford weapon//]
 
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text4&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text4&quot; style=&quot;text-align:left;font-size:20px;font-family:kirsty&quot;&gt;
 &#39;&#39;(text-style:&quot;underline&quot;)[The Freebie]&#39;&#39;
 
  - Nothing!
@@ -2348,7 +2426,7 @@ SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;
 
 
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text5&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text5&quot; style=&quot;text-align:left;font-size:20px;font-family:kirsty&quot;&gt;
 &#39;&#39;(text-style:&quot;underline&quot;)[Barrel of the Strong Stuff]&#39;&#39;
 
  - 17 of any item ($TotalItems/17)
@@ -2357,7 +2435,7 @@ SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;
 
 
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;shop-text6&quot; style=&quot;text-align:left;font-size:20px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;shop-text6&quot; style=&quot;text-align:left;font-size:20px;font-family:kirsty&quot;&gt;
 &#39;&#39;(text-style:&quot;underline&quot;)[The Tumble Horn]&#39;&#39;
 
  - 6 tumbleweed ($Tumbleweed/6)
@@ -2809,19 +2887,21 @@ $TimeLeft hours left]
 [
       (go-to: &quot;Street&quot;)
 ]</tw-passagedata><tw-passagedata pid="41" name="TieScreen" tags="EndScreen" position="1525,0" size="100,100">&lt;div class=&quot;container&quot;&gt;
-&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159512750515560528/image0.jpg?ex=65314b66&amp;is=651ed666&amp;hm=612e10ce8cee012723b81fc65cb1655127ba0b1a97afc76e1e4cfd605cb1ebcd&amp; class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Title.jpg class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
 
-&lt;p class=&quot;end-text&quot; style=&quot;text-align:center;font-family:texas-tango;font-size:65px&quot;&gt;
-Everyone in town got drinks together!
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Start-Pic.png class=&quot;start-badge&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
 
-Cassi&#39;s probably upset though...
+&lt;p class=&quot;end-title-text-pal&quot; style=&quot;text-align:center;color:orange;font-family:rio-grande;font-size:66px&quot;&gt;
+You Got the (text-style:&quot;underline&quot;)[&#39;&#39;Comradery&#39;&#39;] Ending!
 
-Weapon: $Weapon
+//Everyone in town got drinks together!//
+
+Weapon - $Weapon
 &lt;/p&gt;
 (set: $MadeFriends to true)
 
-&lt;p class=&quot;end-text2&quot; style=&quot;font-family:texas-tango;font-size:50px&quot;&gt;
-(link:&quot;&gt;Do I want to do things differently...?&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
+&lt;p class=&quot;start-text2&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
+(link:&quot;New \n Day&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Trail" tags="Area" position="1375,325" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
@@ -2834,52 +2914,52 @@ Weapon: $Weapon
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="TrailSetup" tags="Setup" position="1475,750" size="100,100">Loading 4/10
 
 (set: $TrailSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |TrailSetting&gt;[You see a trail stretching off into the distance as well as Swab-Ball John. (link:&quot;\n \n &gt;Go to Swab Ball John&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)](link:&quot;\n &gt;Go to the trail&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3)]]|S2)[($Trail1:)]|S3)[($TrailWalk:)]]
 ]))
 
 
 (set: $TrailSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |TrailSetting&gt;[You see a trail stretching off into the distance(link:&quot;\n &gt;Go to the trail&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3)](if:$TrailVisit is false)[($GetTumbleweed: &quot;TrailTime&quot;)(set:$TrailVisit to true)]]|S3)[($TrailWalk:)]]
 ]))
 
 
 (set: $TrailSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/sun.png class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/moon.png class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
 [[&gt;Map-&gt;Map]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
-&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:sans-serif&quot;&gt;
+&lt;p class=&quot;game-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
 |TrailSetting&gt;[You see a trail stretching off into the distance as well as (if: $ChickenHat  is false)[ a sign outside that says: “Temporary Office”(link:&quot;\n \n &gt;Look inside&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S2)](link:&quot;\n &gt;Go to the trail&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3)]](else:)[a large tent with a sign outside that says: “Temporary Office”(link:&quot;\n \n &gt;Look inside&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S1)](link:&quot;\n &gt;Go to the trail&quot;)[(hide:?TrailSetting)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?S3)]]]|S1)[($Trail3True:)]|S2)[($Trail3False:)]|S3)[($TrailWalk:)]]
 ]))
 
@@ -2979,19 +3059,21 @@ $TimeLeft hours left]
 (track: &#39;truth&#39;, &#39;play&#39;)(track: &#39;truth&#39;, &#39;loop&#39;, true)|TheSun3&gt;[You’re compelled by your legally binding contract to go to the main road and before you know it you’re there.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?TheSun2)(hide:?TheSun3)]]|TheSun2)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Are ya both ready to begin the duel?(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?TheSun)(hide:?TheSun2)]]|TheSun)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; OF COURSE I’M READY. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?DeadeyeDans)(hide:?TheSun)]]|DeadeyeDans)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Just making sure Dan. Are you ready with your….. Horn?(link:&quot;\n\n &gt;Ready as I’ll ever be&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?SOYER)(hide:?DeadeyeDans)]]|SoYer)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Alright then, you know I’ll let you have a head start cause you have a horn. You can go now.(link:&quot;\n\n &gt;Blow the Tumblehorn&quot;)[(track: &#39;horn&#39;, &#39;playwhenpossible&#39;)(show:?IUh)(hide:?SOYER)]]|IUh)[&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Dan on 3. 3, 2…..(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?FineThen)(hide:?IUh)]]|FineThen)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; You watch Abraham and Dan’s faces contort with fear and terror.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?NoonSoon)(hide:?FineThen)]]|NoonSoon)[You watch a massive shadow begin engulfing the town, and slowly turn around.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Wanders)(hide:?NoonSoon)]]|Wanders)[You see a massive vortex of tumble weeds approaching the town.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Guhn)(hide:?Wanders)]]|Guhn)[You drop the horn in shock before they engulf the town.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(hide:?Guhn)(show:?Crin)]]|Crin)[You and the rest of the town were tumbled to death.(click:?page)[(hide:?Crin)(go-to:&quot;TumbleScreen&quot;)]]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="TumbleScreen" tags="EndScreen" position="1425,0" size="100,100">&lt;div class=&quot;container&quot;&gt;
-&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159512750515560528/image0.jpg?ex=65314b66&amp;is=651ed666&amp;hm=612e10ce8cee012723b81fc65cb1655127ba0b1a97afc76e1e4cfd605cb1ebcd&amp; class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Title.jpg class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
 
-&lt;p class=&quot;end-text&quot; style=&quot;text-align:center;font-family:texas-tango;font-size:65px&quot;&gt;
-Everything is now Tumbleweed!
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Start-Pic.png class=&quot;start-badge&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
 
-How did Cassi even have that horn?
+&lt;p class=&quot;end-title-text-tumb&quot; style=&quot;text-align:center;color:orange;font-family:rio-grande;font-size:66px&quot;&gt;
+You Got the (text-style:&quot;underline&quot;)[&#39;&#39;Tumbleweed&#39;&#39;] Ending!
 
-Weapon: $Weapon
+//How did Cassi even have that horn?//
+
+Weapon - $Weapon
 &lt;/p&gt;
 (set: $TumbledAround to true)
 
-&lt;p class=&quot;end-text2&quot; style=&quot;font-family:texas-tango;font-size:50px&quot;&gt;
-(link:&quot;&gt;I won&#39;t mess up again...&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
+&lt;p class=&quot;start-text2&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
+(link:&quot;New \n Day&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="47" name="Win" tags="Ending" position="1775,450" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
@@ -3003,24 +3085,21 @@ Weapon: $Weapon
 (track: &#39;truth&#39;, &#39;play&#39;)(track: &#39;truth&#39;, &#39;loop&#39;, true)|TheSun2&gt;[You’re compelled by your legally binding contract to go to the main road. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?TheSun)(hide:?TheSun2)]]|TheSun)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Are you both ready?(link:&quot;\n\n &gt;Fer&#39; Shur&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?DeadeyeDans)(hide:?TheSun)]]|DeadeyeDans)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; LET’S GET THIS DONE.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?SOYER)(hide:?DeadeyeDans)]]|SoYer)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/DeadEyeDanT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Sheriff Abraham:&#39;&#39; Alright. 3, 2, 1, draw!(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?IUh)(hide:?SOYER)]]|IUh)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/AbrahamT.png class=&quot;fade-character&quot; width=&quot;575&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; Your hand flies to your gun with lightning speed.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?FineThen)(hide:?IUh)]]|FineThen)[You fling it out of your holster and fire.(click:?page)[(track: &#39;shot&#39;, &#39;playwhenpossible&#39;)(show:?NoonSoon)(hide:?FineThen)]]|NoonSoon)[Deadeye Dan stumbles backward and opens his mouth to say something but nothing comes out.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Wanders)(hide:?NoonSoon)]]|Wanders)[Jeremiah runs over and gives you a hug.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Crin)(hide:?Wanders)]]|Crin)[The two of you live happily into your old age.(click:?page)[(hide:?Crin)(go-to:&quot;WinScreen&quot;)]]
 &lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="WinScreen" tags="EndScreen" position="1325,200" size="100,100">&lt;div class=&quot;container&quot;&gt;
-&lt;img src=https://cdn.discordapp.com/attachments/1148713127907708949/1159512750515560528/image0.jpg?ex=65314b66&amp;is=651ed666&amp;hm=612e10ce8cee012723b81fc65cb1655127ba0b1a97afc76e1e4cfd605cb1ebcd&amp; class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Title.jpg class=&quot;end-background&quot; height=&quot;1000&quot; width=&quot;1800&quot;&gt;
 (set:$Spiin to 0)
-&lt;p class=&quot;end-text&quot; style=&quot;text-align:center;font-family:texas-tango;font-size:65px&quot;&gt;
-You won the duel!
-(if:$Weapon is &quot;Sunset&quot;)[A sunset at high noon] (if:$Weapon is &quot;Ol&quot;)[A duel done right] (if:$Weapon is &quot;Rulebreaker&quot;)[(text-rotate-x:45 + $Spiin)+(text-rotate-y:23 + $Spiin)+(text-rotate-z:335 + $Spiin)[YourTextHere44i3624;&#39;&#39;435.2.3;tgp3tif:Weaponis&quot;Sunset&quot;Asunsetathighnoonif:Weaponis&quot;Ol&quot;Adueldonerightf:Weaponis&quot;Ru
-le&quot;pwegl;wemgewpgmwpeognw4pojt949444wjg4w0e-hje-40whjw0jhwehjwe0&#39;&#39;hjewhgwrgrp
-oighjwprhnlerngo3928*(#)8hfehg89h389H(H~~StrikethroughText~~*#HOe8ht8oghweogheow40whjw0jhwehjwe0hjewhgwpoighjwprhnlerngo3928ljto3hwoe((HTKe
-t&#39;&#39;wehohtweignewi4o9304t593845034 if:Weapon is &quot;Sunset&quot;)A sunset at hiiiiiiiigh nooni&#39;&#39;f:Weapon is &quot;Ol&quot;A duel done rightif:Weaponis&quot;Rule&quot;44i3624;&#39;&#39;435.2.3;tgp3tpwegl;wemgewpgmwpeognw4pojt949444wjg4w0ehje40whjw0jhwehjwe0hjewhgwpoighjwprh
-nlerngo3928(#)8hfehg89h38
-9H(H*#HOe8ht8oghweogheowljto3hwoe((HTKetwehohtweignewi4o9304t593845034abcdefghi
-(click:?page)[(set:$Spiin to $Spiin + 25)
-]]]
+&lt;p class=&quot;end-title-text-win&quot; style=&quot;text-align:center;color:orange;font-family:rio-grande;font-size:66px&quot;&gt;
+You Got the (text-style:&quot;underline&quot;)[&#39;&#39;Survivor&#39;&#39;] Ending!
+
+(if:$Weapon is &quot;Sunset&quot;)[//A sunset at high noon//] (if:$Weapon is &quot;Ol&quot;)[//A duel done right//] (if:$Weapon is &quot;Rulebreaker&quot;)[(text-rotate-x:45 + $Spiin)+(text-rotate-y:23 + $Spiin)+(text-rotate-z:335 + $Spiin)[YourTextHere44i3624;&#39;&#39;435.2.3;tgp3tif:Weaponis&quot;Sunset&quot;Asunsetathighnoonif:Weaponis&quot;Ol&quot;Adueldonerightf:Weaponis&quot;Ru
+le&quot;pwegl;wemgewpgmwpeognw4pojt949444wjg4w0e-hje-40whjw0jhwehjwe0&#39;&#39;hjewhgwrgrpoighjwprhnlerngo3928(#)8hfehg89h389H(H~~StrikethroughText~~*#HOe8ht8oghweogheow40whjw0jhwehjwe0hjewhgwpoighjwprhnlerngo328ljto3hwoe((HTKet&#39;&#39;wehohtweignewi4o9304t593845034 if:Weapon is &quot;Sunset&quot;)Asunset at hiiiiiiiigh nooni&#39;&#39;f:Weapon is &quot;Ol&quot;A duel donerightif:Weaponis&quot;Rule&quot;44i3624;&#39;&#39;435.2.3;tgp3tpwegl;wemgewpgmwpeognw4pojt94944wjg4w0ehje40whjw0jhwehjwe0hjewhgwpoighjwprhnlerngo3928(#)8hfehg89h389H(H*#HOe8ht8oghweogheowljto3hwoe((HTKetwehohtweignewi4o9304t593845034abcdefghi
+(click:?page)[(set:$Spiin to $Spiin + 25)]]]
 (set: $Won to true)
-Weapon: $Weapon
+Weapon - $Weapon
 &lt;/p&gt;
 (if: $Weapon is not &quot;Rulebreaker&quot;)[
-&lt;p class=&quot;end-text2&quot; style=&quot;font-family:texas-tango;font-size:50px&quot;&gt;
-(link:&quot;&gt;What happens next...?&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
+&lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Start-Pic.png class=&quot;start-badge-win&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
+&lt;p class=&quot;start-text2-win&quot; style=&quot;font-family:texas-tango;font-size:50px&quot;&gt;
+(link:&quot;New \n Day&quot;)[(masteraudio: &#39;stopall&#39;)(track: &#39;day&#39;, &#39;playwhenpossible&#39;)&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=https://blackscreen.space/images/pro/black-screen_39.png class=&quot;black&quot; width=&quot;5000&quot; height=&quot;5000&quot;&gt;&lt;/div&gt; {(live: 2s) [(go-to:&quot;AltOpening&quot;) (stop:)]}]
 &lt;/p&gt;
 &lt;/div&gt;]</tw-passagedata><tw-passagedata pid="49" name="hal.tracks" tags="" position="475,25" size="100,100">boom:  Music/SFXBoom.mp3
 click:  Music/SFXclick.mp3
@@ -3048,7 +3127,7 @@ truth:  Music/VGMMomentOfTruth.mp3</tw-passagedata><tw-passagedata pid="50" name
 &lt;img src=https://raw.githubusercontent.com/ZP6400/ZP6400.github.io/main/Start-Pic.png class=&quot;start-badge&quot; height=&quot;500&quot; width=&quot;500&quot;&gt;
 
 &lt;p class=&quot;title-text&quot; style=&quot;text-align:center;color:orange;font-family:rio-grande;font-size:125px&quot;&gt;
-&#39;&#39;Yee Howdy&#39;&#39;
+&#39;&#39;Yee-Howdy&#39;&#39;
 &lt;/p&gt;
 
 &lt;p class=&quot;start-text&quot; style=&quot;text-align:center;font-family:kirsty;font-size:50px&quot;&gt;
