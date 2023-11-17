@@ -65,6 +65,18 @@ tw-sidebar {
    margin: -200px 0px 0px -385px;
 }
 
+.credits {
+   position: absolute;
+   z-index: 0;
+   margin: -150px 0px 0px -385px;
+}
+
+.credits-back-button {
+   position: absolute;
+   z-index: 3;
+   margin: -150px 0px 0px -350px;
+}
+
 
 .fade-character {
    position: absolute;
@@ -4478,10 +4490,8 @@ Hat Shop:
 (else-if:$LastVisited is 9)[(go-to:&quot;Alleyway&quot;)]
 (else-if:$LastVisited is 10)[(go-to:&quot;Gunshop&quot;)]
 (else:)[(go-to:&quot;Map&quot;)]</tw-passagedata><tw-passagedata pid="81" name="Credits" tags="" position="850,125" size="100,100">&lt;div class=&quot;container&quot;&gt;
-
-
-&lt;img src= &quot;Images/Credits.png&quot; class=&quot;end-background&quot;height=&quot;1100&quot; width=&quot;1900&quot;&gt;
-&lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
+&lt;img src= &quot;Images/Credits.png&quot; class=&quot;credits&quot;height=&quot;1025&quot; width=&quot;1900&quot;&gt;
+&lt;p class=&quot;credits-back-button&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 (link:&quot;Back&quot;)[(go-to:&quot;Title&quot;)]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
