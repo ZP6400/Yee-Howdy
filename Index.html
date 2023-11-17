@@ -605,12 +605,12 @@ p {
 (set: $AlleywaySetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -621,12 +621,12 @@ $TimeLeft hours left]
 (set: $AlleywaySetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -638,12 +638,12 @@ $TimeLeft hours left]
 (set: $AlleywaySetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Alleyway(set: $LastVisited to 9)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -743,7 +743,7 @@ $TimeLeft hours left]
 &lt;img src=&quot;Images/Textbox.png&quot; class=&quot;textbox&quot; width=&quot;1400&quot; height=&quot;260&quot;&gt;
 
 &lt;p class=&quot;alt-text&quot; style=&quot;text-align:left;font-size:30px;font-family:kirsty&quot;&gt;
-(track: &#39;yeHow&#39;, &#39;play&#39;)(track: &#39;yeHow&#39;, &#39;loop&#39;, true)|TheSun&gt;[The sun was moseying up to noon when you see them. Your one and only pardner, Jeremiah, and Deadeye Dan sidling up to him. Jeremiah spots you, a look of relief washing over his face as he runs behind you. Everything is happening all over again.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?DeadeyeDans)(hide:?TheSun)]]|DeadeyeDans)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt;Deadeye Dan’s eyes track Jeremiah over to you and slowly walks over. He gets up close to you and you can feel his breath on your stubble. He stares into your eyes for a second and then yells:(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?SOYER)(hide:?DeadeyeDans)]]|SoYer)[&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Deadeye Dan:&#39;&#39; SO YER HIS PARDNER??! WHY JEREMIAH YOU CAN DO BEDDER T’AN DAT! COME BE MY POOKIE BEAR.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?IUh)(hide:?SOYER)]]|IUh)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Jerimiah2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Jeremiah:&#39;&#39; I… uhh…(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?FineThen)(hide:?IUh)]]|FineThen)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-out&quot;&gt;&lt;img src=&quot;Images/Jerimiah2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot; animation=&quot;fadeOut 1s&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; FINE THEN, YOU. YEAH NO EYES. I CHALLENGE YA TO A DUEL!!!(link:&quot;\n\n &gt;GASP&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Choice)(hide:?FineThen)]]|Choice)[(link:&quot;&gt;Fer&#39;sur \n\n&quot;)[(hide:?Choice)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?NoonSoon)](link:&quot;&gt;Nuh&#39; uh \n\n&quot;)[(hide:?Choice)(go-to:&quot;Arrested&quot;)]]|NoonSoon)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; NOON TAHMORROW AT THE MAIN ROAD.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Wanders)(hide:?NoonSoon)]]|Wanders)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; Deadeye Dan wanders off to the saloon&#39;s inn, and then it’s just you and Jeremiah.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Dooel)(hide:?Wanders)]]|Dooel)[&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Jerimiah2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Jeremiah:&#39;&#39; How’reyaguna dooel witoutaguhn?(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Guhn)(hide:?Dooel)]]|Guhn)[&lt;img src=&quot;Images/Jerimiah2.png&quot; class=&quot;alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Jeremiah:&#39;&#39; Evehrybudy ‘n Tumble Town has an extra guhn or five. If ya need any help lemme know. I’ll be ere till 1.(click:?page)[(hide:?Guhn)(go-to:&quot;StartSetup&quot;)]]
+(set:$NG to true)(track: &#39;yeHow&#39;, &#39;play&#39;)(track: &#39;yeHow&#39;, &#39;loop&#39;, true)|TheSun&gt;[The sun was moseying up to noon when you see them. Your one and only pardner, Jeremiah, and Deadeye Dan sidling up to him. Jeremiah spots you, a look of relief washing over his face as he runs behind you. Everything is happening all over again.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?DeadeyeDans)(hide:?TheSun)]]|DeadeyeDans)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt;Deadeye Dan’s eyes track Jeremiah over to you and slowly walks over. He gets up close to you and you can feel his breath on your stubble. He stares into your eyes for a second and then yells:(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?SOYER)(hide:?DeadeyeDans)]]|SoYer)[&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Deadeye Dan:&#39;&#39; SO YER HIS PARDNER??! WHY JEREMIAH YOU CAN DO BEDDER T’AN DAT! COME BE MY POOKIE BEAR.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?IUh)(hide:?SOYER)]]|IUh)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Jerimiah2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Jeremiah:&#39;&#39; I… uhh…(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?FineThen)(hide:?IUh)]]|FineThen)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-out&quot;&gt;&lt;img src=&quot;Images/Jerimiah2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot; animation=&quot;fadeOut 1s&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; FINE THEN, YOU. YEAH NO EYES. I CHALLENGE YA TO A DUEL!!!(link:&quot;\n\n &gt;GASP&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Choice)(hide:?FineThen)]]|Choice)[(link:&quot;&gt;Fer&#39;sur \n\n&quot;)[(hide:?Choice)(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?NoonSoon)](link:&quot;&gt;Nuh&#39; uh \n\n&quot;)[(hide:?Choice)(go-to:&quot;Arrested&quot;)]]|NoonSoon)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; NOON TAHMORROW AT THE MAIN ROAD.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Wanders)(hide:?NoonSoon)]]|Wanders)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; Deadeye Dan wanders off to the saloon&#39;s inn, and then it’s just you and Jeremiah.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Dooel)(hide:?Wanders)]]|Dooel)[&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Jerimiah2.png&quot; class=&quot;fade-alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Jeremiah:&#39;&#39; How’reyaguna dooel witoutaguhn?(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?Guhn)(hide:?Dooel)]]|Guhn)[&lt;img src=&quot;Images/Jerimiah2.png&quot; class=&quot;alt-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Jeremiah:&#39;&#39; Evehrybudy ‘n Tumble Town has an extra guhn or five. If ya need any help lemme know. I’ll be ere till 1.(click:?page)[(hide:?Guhn)(go-to:&quot;StartSetup&quot;)]]
 
 (link: &quot;&gt;Get Right to Business (Skip intro)&quot;)[(go-to:&quot;StartSetup&quot;)]
 &lt;/p&gt;
@@ -849,12 +849,12 @@ Weapon - $Weapon
 (if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun-shop&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon-shop&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text-shop&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Gun Shop(set: $LastVisited to 10)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text-shop&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Gun Shop(set: $LastVisited to 10)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 
@@ -973,12 +973,12 @@ $TimeLeft hours left]
 (set: $ShopSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -991,12 +991,12 @@ $TimeLeft hours left]
 (set: $ShopSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1010,12 +1010,12 @@ $TimeLeft hours left]
 (set: $ShopSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Pat&#39;s Shop(set: $LastVisited to 2)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1139,12 +1139,12 @@ Weapon - $Weapon
 (set: $InnSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1156,12 +1156,12 @@ $TimeLeft hours left]
 (set: $InnSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1173,12 +1173,12 @@ $TimeLeft hours left]
 (set: $InnSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1190,12 +1190,12 @@ $TimeLeft hours left]
 (set: $InnSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1207,12 +1207,12 @@ $TimeLeft hours left]
 (set: $InnSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Inn(set: $LastVisited to 6)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1408,7 +1408,7 @@ Weapon - $Weapon
 &lt;p class=&quot;map-text&quot; style=&quot;text-align:left;font-size:29px;font-family:kirsty&quot;&gt;
 $Hour:$Minute(if: $Minute &lt;10)[0] $M
 
-(link:&quot;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 
 (text-style:&quot;bold&quot;,&quot;underline&quot;)[&#39;&#39;Travel:&#39;&#39;]
 (link:&quot;Street&quot;)[(track: &#39;walk&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;StreetTime&quot;)]($TravelToPlace:$ToStreet) 
@@ -1450,7 +1450,7 @@ Total Items: $TotalItems(if:$Won)[(if:$LastWin is &quot;Long&quot;)[&lt;img src=
 (set: $Won to false)(set: $Lost to false)(set: $WasStupid to false)(set: $WentBoom to false)(set: $MadeFriends to false)(set: $TumbledAround to false)(set: $GotArrested to false)(set: $LastWin to &quot;&quot;)(set: $LastLose to &quot;&quot;)
 
 &lt;!--Events Witnessed--&gt;
-(set: $SaloonTips to false)(set: $SaloonWhiskey to false)(set: $SaloonStory to false)(set: $SaloonPina to false)(set: $SaloonLook to false)(set: $SaloonRum to false)(set: $SaloonDrink to false)(set: $SaloonPassed to false)(set: $SaloonClean to false)(set: $SaloonPat to false)(set: $SaloonBoulevardier to false)(set: $SaloonSwab to false)(set: $SaloonSleep to false)(set: $SaloonFinger to false)(set: $SaloonSpecial to false)(set: $StreetRope to false)(set: $StreetFirst to false)(set: $StreetTumbleOne to false)(set: $StreetSecond to false)(set: $StreetHatOne to false)(set: $StreetThird to false)(set: $StreetCassi to false)(set: $StreetTumbleTwo to false)(set: $StreetFourth to false)(set: $StreetHatTwo to false)(set: $StreetFifth to false)(set: $StreetHatThree to false)(set: $StreetTumbleThree to false)(set: $StreetSixth to false)(set: $StreetHatFour to false)(set: $StreetPatrol to false)(set: $StreetSeventh to false)(set: $StreetClear to false)(set: $StreetTumbleFour to false)(set: $StreetFinal to false)(set: $RanchHunger to false)(set: $RanchWork to false)(set: $RanchSearch to false)(set: $RanchSleep to false)(set: $RanchSleepTwo to false)(set: $RanchNapping to false)(set: $RanchGone to false)(set: $RanchDeliver to false)(set: $RanchConsume to false)(set: $RanchRest to false)(set: $RanchGoneAgain to false)(set: $TrailWarningOne to false)(set: $TrailNobodyOne to false)(set: $TrailAbe to false)(set: $TrailWarningTwo to false)(set: $TrailNobodyTwo to false)(set: $TrailWarningThree to false)(set: $TrailNobodyThree to false)(set: $InnDan to false)(set: $InnJeremiah to false)(set: $InnNobodyOne to false)(set: $InnPat to false)(set: $InnNobodyTwo to false)(set: $InnFinal to false)(set: $AlleyNobodyOne to false)(set: $AlleySwab to false)(set: $AlleyNobodyTwo to false)(set: $AlleyNobodyThree to false)(set: $AlleyMonica to false)(set: $ShopOpenOne to false)(set: $ShopDan to false)(set: $ShopClosed to false)(set: $ShopOpening to false)(set: $ShopOpenTwo to false)(set: $ShopLocked to false)(set: $SherriffWork to false)(set: $SherriffNobodyOne to false)(set: $SherriffSleep to false)(set: $SherriffHat to false)(set: $SherriffComplain to false)(set: $SherriffNobodyTwo to false)(set: $SherriffCoffee to false)(set: $HatSmith to false)(set: $HatNobody to false)(set: $HatClose to false)
+(set: $SaloonTips to false)(set: $SaloonWhiskey to false)(set: $SaloonStory to false)(set: $SaloonPina to false)(set: $SaloonLook to false)(set: $SaloonRum to false)(set: $SaloonDrink to false)(set: $SaloonPassed to false)(set: $SaloonClean to false)(set: $SaloonPat to false)(set: $SaloonBoulevardier to false)(set: $SaloonSwab to false)(set: $SaloonSleep to false)(set: $SaloonFinger to false)(set: $SaloonSpecial to false)(set: $StreetRope to false)(set: $StreetFirst to false)(set: $StreetTumbleOne to false)(set: $StreetSecond to false)(set: $StreetHatOne to false)(set: $StreetThird to false)(set: $StreetCassi to false)(set: $StreetTumbleTwo to false)(set: $StreetFourth to false)(set: $StreetHatTwo to false)(set: $StreetFifth to false)(set: $StreetHatThree to false)(set: $StreetTumbleThree to false)(set: $StreetSixth to false)(set: $StreetHatFour to false)(set: $StreetPatrol to false)(set: $StreetSeventh to false)(set: $StreetClear to false)(set: $StreetTumbleFour to false)(set: $StreetFinal to false)(set: $RanchHunger to false)(set: $RanchWork to false)(set: $RanchSearch to false)(set: $RanchSleep to false)(set: $RanchSleepTwo to false)(set: $RanchNapping to false)(set: $RanchGone to false)(set: $RanchDeliver to false)(set: $RanchConsume to false)(set: $RanchRest to false)(set: $RanchGoneAgain to false)(set: $TrailWarningOne to false)(set: $TrailNobodyOne to false)(set: $TrailAbe to false)(set: $TrailWarningTwo to false)(set: $TrailNobodyTwo to false)(set: $TrailWarningThree to false)(set: $TrailNobodyThree to false)(set: $InnDan to false)(set: $InnJeremiah to false)(set: $InnNobodyOne to false)(set: $InnPat to false)(set: $InnNobodyTwo to false)(set: $InnFinal to false)(set: $AlleyNobodyOne to false)(set: $AlleySwab to false)(set: $AlleyNobodyTwo to false)(set: $AlleyNobodyThree to false)(set: $AlleyMonica to false)(set: $ShopOpenOne to false)(set: $ShopDan to false)(set: $ShopClosed to false)(set: $ShopOpening to false)(set: $ShopOpenTwo to false)(set: $ShopLocked to false)(set: $SherriffWork to false)(set: $SherriffNobodyOne to false)(set: $SherriffSleep to false)(set: $SherriffHat to false)(set: $SherriffComplain to false)(set: $SherriffNobodyTwo to false)(set: $SherriffCoffee to false)(set: $HatSmith to false)(set: $HatNobody to false)(set: $HatClose to false)(set:$NG to false)
 </tw-passagedata><tw-passagedata pid="28" name="Ranch" tags="Area" position="1275,600" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 (if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/Ranch1.jpeg&quot; class=&quot;background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;](else:)[&lt;img src=&quot;Images/Ranch2.jpeg&quot; class=&quot;background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;]
@@ -1467,12 +1467,12 @@ Total Items: $TotalItems(if:$Won)[(if:$LastWin is &quot;Long&quot;)[&lt;img src=
 (set: $RanchSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1485,12 +1485,12 @@ $TimeLeft hours left]
 (set: $RanchSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1503,12 +1503,12 @@ $TimeLeft hours left]
 (set: $RanchSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1521,12 +1521,12 @@ $TimeLeft hours left]
 (set: $RanchSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1539,12 +1539,12 @@ $TimeLeft hours left]
 (set: $RanchSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1557,12 +1557,12 @@ $TimeLeft hours left]
 (set: $RanchSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1575,12 +1575,12 @@ $TimeLeft hours left]
 (set: $RanchSetting7a to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1593,12 +1593,12 @@ $TimeLeft hours left]
 (set: $RanchSetting7b to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1611,12 +1611,12 @@ $TimeLeft hours left]
 (set: $RanchSetting8 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1628,12 +1628,12 @@ $TimeLeft hours left]
 (set: $RanchSettingM to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Ol&#39; Ranch(set: $LastVisited to 5)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1759,12 +1759,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1776,12 +1776,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1794,12 +1794,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1813,12 +1813,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1831,12 +1831,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1849,12 +1849,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1867,12 +1867,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting6a to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1885,12 +1885,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting7 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1903,12 +1903,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting8 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1921,12 +1921,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting9 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1939,12 +1939,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting10 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -1957,12 +1957,12 @@ $TimeLeft hours left]
 (set: $SaloonSetting11 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Sam&#39;s Saloon(set: $LastVisited to 4)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2023,7 +2023,7 @@ $TimeLeft hours left]
 (set: $Saloon6True to (macro: [ (output:)[|Saloon6T&gt;[Samson is cleaning up the floor.]]
 ]))
 
-(set: $Saloon6 to (macro: [ (output:)[|Saloon6a&gt;[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=&quot;Images/Cassi2.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39;  Weeelll, if it ain’t the cowboy. *hic* You want to race me? See who can finish a bottle of *hic* whiskey first? (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6b)(hide:?Saloon6a)]]|Saloon6b)[&lt;img src=&quot;Images/Cassi2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; You’ve seen this before. The last time someone tried to beat her in a drinking game, they were violently drunk as Cassi charged them for her booze.(link:&quot;\n \n &gt;I&#39;ll Pass Cassi&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6c)(hide:?Saloon6b)]]|Saloon6c)[&lt;img src=&quot;Images/Cassi2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Cassi:&#39;&#39;  Well, *hic* I guess you’re smarter than you look. *hic*(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6d)(hide:?Saloon6c)]]|Saloon6d)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=&quot;Images/Cassi2.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; She looks like she’s only a couple bottles away from passing out. You decide it’s best to leave before she tries to get you to play a drinking game again.(click:?page)[(set: $SaloonDrink to true)(set:$DrinkingGame to true)(go-to:&quot;SaloonTime&quot;)(hide:?Saloon6d)]]
+(set: $Saloon6 to (macro: [ (output:)[|Saloon6a&gt;[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=&quot;Images/Cassi2.png&quot; class=&quot;fade-character&quot; width=&quot;450&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39;  Weeelll, if it ain’t the cowboy. *hic* You want to race me? See who can finish a bottle of *hic* whiskey first? (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6b)(hide:?Saloon6a)]]|Saloon6b)[&lt;img src=&quot;Images/Cassi2.png&quot; class=&quot;character&quot; width=&quot;450&quot; height=&quot;600&quot;/&gt; You’ve seen this before. The last time someone tried to beat her in a drinking game, they were violently drunk as Cassi charged them for her booze.(link:&quot;\n \n &gt;I&#39;ll Pass Cassi&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6c)(hide:?Saloon6b)]]|Saloon6c)[&lt;img src=&quot;Images/Cassi2.png&quot; class=&quot;character&quot; width=&quot;450&quot; height=&quot;600&quot;/&gt; &#39;&#39;Cassi:&#39;&#39;  Well, *hic* I guess you’re smarter than you look. *hic*(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Saloon6d)(hide:?Saloon6c)]]|Saloon6d)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=&quot;Images/Cassi2.png&quot; class=&quot;fade-character&quot; width=&quot;450&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; She looks like she’s only a couple bottles away from passing out. You decide it’s best to leave before she tries to get you to play a drinking game again.(click:?page)[(set: $SaloonDrink to true)(set:$DrinkingGame to true)(go-to:&quot;SaloonTime&quot;)(hide:?Saloon6d)]]
 ]]))
 
 (set: $Saloon2Poo to (macro: [ (output:)[|Saloon2T&gt;[You should probably avoid her before she tries to get you to play a drinking game again.(click:?page)[(go-to:&quot;SaloonTime&quot;)(hide:?Saloon2T)]]
@@ -2148,12 +2148,12 @@ $TimeLeft hours left]
 (set: $SheriffSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2165,12 +2165,12 @@ $TimeLeft hours left]
 (set: $SheriffSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2182,12 +2182,12 @@ $TimeLeft hours left]
 (set: $SheriffSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2199,12 +2199,12 @@ $TimeLeft hours left]
 (set: $SheriffSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2216,12 +2216,12 @@ $TimeLeft hours left]
 (set: $SheriffSetting5 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2233,12 +2233,12 @@ $TimeLeft hours left]
 (set: $SheriffSetting6 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2250,12 +2250,12 @@ $TimeLeft hours left]
 (set: $SheriffSetting7 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Jail House(set: $LastVisited to 7)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2562,12 +2562,12 @@ SOME CROOK STOLE MY KEY WHILE I WAS DRINKIN. IF YOU DID THIS, THEN WHY DIDN&#39;
 (set: $StreetSetting1 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2579,12 +2579,12 @@ $TimeLeft hours left]
 (set: $StreetSetting2 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2597,12 +2597,12 @@ $TimeLeft hours left]
 (set: $StreetSetting3a to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2614,12 +2614,12 @@ $TimeLeft hours left]
 (set: $StreetSetting3b to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2632,12 +2632,12 @@ $TimeLeft hours left]
 (set: $StreetSetting3c to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2649,12 +2649,12 @@ $TimeLeft hours left]
 (set: $StreetSetting4 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2667,12 +2667,12 @@ $TimeLeft hours left]
 (set: $StreetSetting5 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2685,12 +2685,12 @@ $TimeLeft hours left]
 (set: $StreetSetting6 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2703,12 +2703,12 @@ $TimeLeft hours left]
 (set: $StreetSetting7 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2722,12 +2722,12 @@ $TimeLeft hours left]
 (set: $StreetSetting8 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2740,12 +2740,12 @@ $TimeLeft hours left]
 (set: $StreetSetting9 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2759,12 +2759,12 @@ $TimeLeft hours left]
 (set: $StreetSetting10 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2777,12 +2777,12 @@ $TimeLeft hours left]
 (set: $StreetSetting11 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2795,12 +2795,12 @@ $TimeLeft hours left]
 (set: $StreetSetting12 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2813,12 +2813,12 @@ $TimeLeft hours left]
 (set: $StreetSetting13 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2831,12 +2831,12 @@ $TimeLeft hours left]
 (set: $StreetSetting14 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2850,12 +2850,12 @@ $TimeLeft hours left]
 (set: $StreetSetting15 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2869,12 +2869,12 @@ $TimeLeft hours left]
 (set: $StreetSetting16 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2889,12 +2889,12 @@ $TimeLeft hours left]
 (set: $StreetSetting17 to (macro: [(output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Dusty Avenue(set: $LastVisited to 1)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -2926,7 +2926,7 @@ $TimeLeft hours left]
 (set: $Street6 to (macro: [(output:)[|Street6b&gt;[&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=&quot;Images/John1.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; You approach the loon cautiously and ask him what he’s thinking about.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6c)(hide:?Street6b)]]|Street6c)[&lt;img src=&quot;Images/John1.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; You ever wonder where water comes from?(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6d)(hide:?Street6c)]]|Street6d)[&lt;img src=&quot;Images/John1.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; I mean, you must know, cause you’re the great Spirit!(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6e)(hide:?Street6d)]]|Street6e)[&lt;img src=&quot;Images/John1.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; Don’t tell me, though. I want to figure it out. It must come from the ground… (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6f)(hide:?Street6e)]]|Street6f)[&lt;img src=&quot;Images/John2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; Swab-Ball John continues to ramble on about his theories about where water comes from and how it works. Overall, they’re very interesting yet unhinged theories, but you know all of them are wrong. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6g)(hide:?Street6f)]]|Street6g)[&lt;img src=&quot;Images/John2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; You just don’t have the heart to tell him. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6h)(hide:?Street6g)]]|Street6h)[&lt;img src=&quot;Images/John2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; Well, am I right?  (link:&quot;\n \n &gt;Fer’ Shur, John.&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6i)(hide:?Street6h)]]|Street6i)[&lt;img src=&quot;Images/John2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; I knew it! (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6j)(hide:?Street6i)]]|Street6j)[&lt;img src=&quot;Images/John2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; Thankya, Spirit. I’m alwaaaays right! (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street6y)(hide:?Street6j)]]|Street6y)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=&quot;Images/John2.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; Swab-Ball John hobbles towards the ranch. What could he be doing there?(click:?page)[(show: ?Street6z)(hide:?Street6y)]]|Street6z)[(set: $StreetThird to true)(set:$Ramblings to $Ramblings + 1)(set:$LastVisited to 60)(go-to:&quot;StreetTime&quot;)(hide:?Street6z)]
 ]]))
 
-(set: $Street7 to (macro: [(output:)[|Street7b&gt;[&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=&quot;Images/Cassi1.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39;  Howdy friend, you also heading to the saloon for a drink? (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street7c)(hide:?Street7b)]]|Street7c)[&lt;img src=&quot;Images/Cassi1.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&#39;&#39;Cassi:&#39;&#39;  Regardless, I feel like I heard something happening around the ranch. It might just be Jeremiah wrapping up his work. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street7d)(hide:?Street7c)]]|Street7d)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=&quot;Images/Cassi1.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39;  Well, I’m off to get a drink. I&#39;ll be there at 10. See you ~~space~~ cowboy.(click:?page)[(set: $StreetCassi to true)(go-to:&quot;StreetTime&quot;)(hide:?Street7d)]]
+(set: $Street7 to (macro: [(output:)[|Street7b&gt;[&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=&quot;Images/Cassi1.png&quot; class=&quot;fade-character&quot; width=&quot;450&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39;  Howdy friend, you also heading to the saloon for a drink? (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street7c)(hide:?Street7b)]]|Street7c)[&lt;img src=&quot;Images/Cassi1.png&quot; class=&quot;character&quot; width=&quot;450&quot; height=&quot;600&quot;/&gt;&#39;&#39;Cassi:&#39;&#39;  Regardless, I feel like I heard something happening around the ranch. It might just be Jeremiah wrapping up his work. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street7d)(hide:?Street7c)]]|Street7d)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=&quot;Images/Cassi1.png&quot; class=&quot;fade-character&quot; width=&quot;450&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Cassi:&#39;&#39;  Well, I’m off to get a drink. I&#39;ll be there at 10. See you ~~space~~ cowboy.(click:?page)[(set: $StreetCassi to true)(go-to:&quot;StreetTime&quot;)(hide:?Street7d)]]
 ]]))
 
 (set: $Street8 to (macro: [(output:)[|Street8b&gt;[&lt;div class=&quot;slower-fade-in&quot;&gt;&lt;img src=&quot;Images/John2.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Swab-Ball John:&#39;&#39; Hi-diddly-ho, Spirit o’ the West!(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8c)(hide:?Street8b)]]|Street8c)[&lt;img src=&quot;Images/John2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; *cough* Ahhh, this TumbleWeed is hitting the spot. *cough* You want some- Wait. Right, this is my TumbleWeed, and you can’t smoke before the *cough* duel.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8d)(hide:?Street8c)]]|Street8d)[&lt;img src=&quot;Images/John2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; Swab-Ball John stands there for a second before his face contorts into complete terror.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8e)(hide:?Street8d)]]|Street8e)[&lt;img src=&quot;Images/John4.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; WHY IS THE DRAGON ‘ERE?!?! (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8f)(hide:?Street8e)]]|Street8f)[&lt;img src=&quot;Images/John4.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; &#39;&#39;Swab-Ball John:&#39;&#39; I THOUGHT I KILLED YOU IN RYÜL, ALKIR! COME ‘ERE AND FIGHT ME, THIS ENDS TODAY!!!! (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8g)(hide:?Street8f)]]|Street8g)[&lt;img src=&quot;Images/John4.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; Swab-Ball John is howling at the top of his lungs, swinging a non-existant sword at the air and rolling around in the dirt dodging invisible attacks.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8h)(hide:?Street8g)]]|Street8h)[&lt;img src=&quot;Images/John4.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; At this point, you’re here just to watch the town loon attack the air and fight a dragon that only he can see.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8i)(hide:?Street8h)]]|Street8i)[&lt;img src=&quot;Images/John4.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; After a little while, you begin cheering for John and start using your finger guns to defeat the dragon. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8j)(hide:?Street8i)]]|Street8j)[&lt;img src=&quot;Images/John2.png&quot; class=&quot;character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt; An hour of intense battle later, Swab-Ball John lets out a triumphant roar. He gives you a thumbs up which you return with a smile. (click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show: ?Street8y)(hide:?Street8j)]]|Street8y)[&lt;div class=&quot;slow-fade-out&quot;&gt;&lt;img src=&quot;Images/John2.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; Shortly after Swab-Ball John walks back to the trail. (click:?page)[(show: ?Street8z)(hide:?Street8y)]]|Street8z)[(set: $StreetFourth to true)(set:$Ramblings to $Ramblings + 1)(set:$LastVisited to 60)(go-to:&quot;StreetTime&quot;)(hide:?Street8z)]
@@ -3057,12 +3057,12 @@ Weapon - $Weapon
 (set: $TrailSetting1a to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -3074,12 +3074,12 @@ $TimeLeft hours left]
 (set: $TrailSetting1b to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -3091,12 +3091,12 @@ $TimeLeft hours left]
 (set: $TrailSetting1c to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -3108,12 +3108,12 @@ $TimeLeft hours left]
 (set: $TrailSetting2 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -3125,12 +3125,12 @@ $TimeLeft hours left]
 (set: $TrailSetting3 to (macro: [ (output:)[(if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;img src=&quot;Images/sun.png&quot; class=&quot;hud-sun&quot; width=&quot;550&quot; height=&quot;550&quot;&gt;](else:)[&lt;img src=&quot;Images/moon.png&quot; class=&quot;hud-moon&quot;width=&quot;650&quot; height=&quot;650&quot;&gt; &lt;div class=&quot;container&quot;&gt;](if: ($Timepassed &lt; 9) or ($Timepassed &gt; 18))[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left](else:)[&lt;div class=&quot;container&quot;&gt;
 &lt;p class=&quot;hud-text&quot; style=&quot;text-align:left;font-size:25px;font-family:kirsty&quot;&gt;
 Endless Trail(set: $LastVisited to 3)           
-[[&gt;Map-&gt;Map]]
+[[&gt;Map-&gt;Map]](if:$NG is true)[(link:&quot;\n&quot;)[](link:&quot;&gt;Notebook&quot;)[(go-to:&quot;GoToMap&quot;)]]
 $Hour:$Minute(if: $Minute &lt;10)[0] $M 
 $TimeLeft hours left]
 &lt;div class=&quot;container&quot;&gt;
@@ -3330,13 +3330,13 @@ truth:  Music/VGMMomentOfTruth.mp3</tw-passagedata><tw-passagedata pid="50" name
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="54" name="12:00pm" tags="" position="25,225" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;11:00am&quot;)[(go-to:&quot;11:00am&quot;)] 
+(link:&quot;11:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;11:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **12:00pm**
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;1:00pm&quot;)[(go-to:&quot;1:00pm&quot;)]
+(link:&quot;1:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;1:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3352,11 +3352,11 @@ Ranch:
 
 Trail:
 
-(if:$TrailWarningOne is true)[ - Swab Ball Johnson is warning about the trail](else:)[ - ???]
+(if:$TrailWarningOne is true)[ - Swab Ball is warning about the trail](else:)[ - ???]
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3375,13 +3375,13 @@ Hat Shop:
 (if:$HatSmith is true)[ - Pat is smithing away at her hats (Hat)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="55" name="1:00pm" tags="" position="150,225" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;12:00pm&quot;)[(go-to:&quot;12:00pm&quot;)] 
+(link:&quot;12:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;12:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **1:00pm**
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;2:00pm&quot;)[(go-to:&quot;2:00pm&quot;)]
+(link:&quot;2:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;2:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3397,11 +3397,11 @@ Ranch:
 
 Trail:
 
-(if:$TrailWarningOne is true)[ - Swab Ball Johnson is warning about the trail](else:)[ - ???]
+(if:$TrailWarningOne is true)[ - Swab Ball is warning about the trail](else:)[ - ???]
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3420,13 +3420,13 @@ Hat Shop:
 (if:$HatSmith is true)[ - Pat is smithing away at her hats (Hat)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="56" name="2:00pm" tags="" position="275,225" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;1:00pm&quot;)[(go-to:&quot;1:00pm&quot;)] 
+(link:&quot;1:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;1:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **2:00pm**
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;3:00pm&quot;)[(go-to:&quot;3:00pm&quot;)]
+(link:&quot;3:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;3:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3434,7 +3434,7 @@ Saloon:
 
 Street:
 
-(if:$StreetFirst is true)[ - Swab Ball John&#39;s first rambling (The knowledge of how you see into the ether of the town to summon a gun from the rattlesnake demon glass?)](else:)[ - ???]
+(if:$StreetFirst is true)[ - Swab Ball John&#39;s first rambling](else:)[ - ???]
 
 Ranch:
 
@@ -3446,7 +3446,7 @@ Trail:
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3465,13 +3465,13 @@ Hat Shop:
 (if:$HatSmith is true)[ - Pat is smithing away at her hats (Hat)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="57" name="3:00pm" tags="" position="400,225" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;2:00pm&quot;)[(go-to:&quot;2:00pm&quot;)] 
+(link:&quot;2:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;2:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **3:00pm**
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;4:00pm&quot;)[(go-to:&quot;4:00pm&quot;)]
+(link:&quot;4:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;4:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3491,7 +3491,7 @@ Trail:
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3510,13 +3510,13 @@ Hat Shop:
 (if:$HatSmith is true)[ - Pat is smithing away at her hats (Hat)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="58" name="4:00pm" tags="" position="525,225" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;3:00pm&quot;)[(go-to:&quot;3:00pm&quot;)] 
+(link:&quot;3:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;3:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **4:00pm**
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;5:00pm&quot;)[(go-to:&quot;5:00pm&quot;)]
+(link:&quot;5:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;5:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3536,7 +3536,7 @@ Trail:
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3555,13 +3555,13 @@ Hat Shop:
 (if:$HatSmith is true)[ - Pat is smithing away at her hats (Hat)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="59" name="5:00pm" tags="" position="25,350" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;4:00pm&quot;)[(go-to:&quot;4:00pm&quot;)] 
+(link:&quot;4:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;4:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **5:00pm** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;6:00pm&quot;)[(go-to:&quot;6:00pm&quot;)]
+(link:&quot;6:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;6:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3569,7 +3569,7 @@ Saloon:
 
 Street:
 
-(if:$StreetSecond is true)[ - Swab Ball John&#39;s second rambling (A larger fish to fry?)](else:)[ - ???]
+(if:$StreetSecond is true)[ - Swab Ball John&#39;s second rambling](else:)[ - ???]
 
 Ranch:
 
@@ -3581,7 +3581,7 @@ Trail:
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3600,17 +3600,17 @@ Hat Shop:
 (if:$HatSmith is true)[ - Pat is smithing away at her hats (Hat)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="60" name="6:00pm" tags="" position="150,350" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;5:00pm&quot;)[(go-to:&quot;5:00pm&quot;)] 
+(link:&quot;5:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;5:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **6:00pm** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;7:00pm&quot;)[(go-to:&quot;7:00pm&quot;)]
+(link:&quot;7:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;7:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonPina is true)[ - Samson is offering a piña colada (A drink)](else:)[ - ???]
+(if:$SaloonPina is true)[ - Samson is offering a piña colada (Drink)](else:)[ - ???]
 
 Street:
 
@@ -3618,7 +3618,7 @@ Street:
 
 Ranch:
 
-(if:$RanchSleep is true)[ - Monica is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchWork is true)[ - Jeremiah is working at the ranch](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchSearch is true)[ - Abraham is investigating the chicken coop](else:)[ - ???]
+(if:$RanchSleep is true)[ - Monica is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchWork is true)[ - Jeremiah is working at the ranch (Egg)](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchSearch is true)[ - Abraham is looking at the chicken coop](else:)[ - ???]
 
 Trail:
 
@@ -3626,7 +3626,7 @@ Trail:
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3645,17 +3645,17 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="61" name="7:00pm" tags="" position="275,350" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;6:00pm&quot;)[(go-to:&quot;6:00pm&quot;)] 
+(link:&quot;6:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;6:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **7:00pm** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;8:00pm&quot;)[(go-to:&quot;8:00pm&quot;)]
+(link:&quot;8:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;8:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonPina is true)[ - Samson is offering a piña colada (A drink)](else:)[ - ???]
+(if:$SaloonPina is true)[ - Samson is offering a piña colada (Drink)](else:)[ - ???]
 
 Street:
 
@@ -3663,7 +3663,7 @@ Street:
 
 Ranch:
 
-(if:$RanchSleep is true)[ - Monica is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchWork is true)[ - Jeremiah is working at the ranch](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchSearch is true)[ - Abraham is investigating the chicken coop](else:)[ - ???]
+(if:$RanchSleep is true)[ - Monica is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchWork is true)[ - Jeremiah is working at the ranch (Egg)](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchSearch is true)[ - Abraham is looking at the chicken coop](else:)[ - ???]
 
 Trail:
 
@@ -3671,7 +3671,7 @@ Trail:
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3690,13 +3690,13 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="62" name="8:00pm" tags="" position="400,350" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;7:00pm&quot;)[(go-to:&quot;7:00pm&quot;)] 
+(link:&quot;7:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;7:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **8:00pm** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;9:00pm&quot;)[(go-to:&quot;9:00pm&quot;)]
+(link:&quot;9:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;9:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3704,11 +3704,11 @@ Saloon:
 
 Street:
 
-(if:$StreetThird is true)[ - Swab Ball John&#39;s third rambling (The ability to conjure water from the ether?)](else:)[ - ???]
+(if:$StreetThird is true)[ - Swab Ball John&#39;s third rambling](else:)[ - ???]
 
 Ranch:
 
-(if:$RanchSleep is true)[ - Monica is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchWork is true)[ - Jeremiah is working at the ranch](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchSearch is true)[ - Abraham is investigating the chicken coop](else:)[ - ???]
+(if:$RanchSleep is true)[ - Monica is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchWork is true)[ - Jeremiah is working at the ranch (Egg)](else:)[ - ???](link:&quot;\n&quot;)[](if:$RanchSearch is true)[ - Abraham is looking at the chicken coop](else:)[ - ???]
 
 Trail:
 
@@ -3716,7 +3716,7 @@ Trail:
 
 Inn:
 
-(if:$InnDan is true)[ - Deadeye Dan is ready for some ruckus (Middle Finger)](else:)[ - ???]
+(if:$InnDan is true)[ - Deadeye Dan is ready for ruckus (Finger)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3735,13 +3735,13 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="63" name="9:00pm" tags="" position="525,350" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;8:00pm&quot;)[(go-to:&quot;8:00pm&quot;)] 
+(link:&quot;8:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;8:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **9:00pm** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;10:00pm&quot;)[(go-to:&quot;10:00pm&quot;)]
+(link:&quot;10:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;10:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3753,15 +3753,15 @@ Street:
 
 Ranch:
 
-(if:$StoppedHorseNapping is false)[(if:$RanchNapping is true)[ - Swab Ball Johnson is horsenapping Monica](else:)[ - ???]](else:)[(if:$RanchSleepTwo is true)[ - Monica is sleeping](else:)[ - ???]]
+(if:$StoppedHorseNapping is false)[(if:$RanchNapping is true)[ - Swab Ball is horsenapping Monica](else:)[ - ???]](else:)[(if:$RanchSleepTwo is true)[ - Monica is sleeping](else:)[ - ???]]
 
 Trail:
 
-(if:$TrailAbe is true)[ - Abraham is looking for the missing chickens (A horseshoe)](else:)[ - ???]
+(if:$TrailAbe is true)[ - Abraham is searching for chickens (Horseshoe)](else:)[ - ???]
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3780,13 +3780,13 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="64" name="10:00pm" tags="" position="25,475" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;9:00pm&quot;)[(go-to:&quot;9:00pm&quot;)] 
+(link:&quot;9:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;9:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **10:00pm** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;11:00pm&quot;)[(go-to:&quot;11:00pm&quot;)]
+(link:&quot;11:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;11:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3798,15 +3798,15 @@ Street:
 
 Ranch:
 
-(if:$StoppedHorseNapping is false)[(if:$RanchNapping is true)[ - Swab Ball Johnson is horsenapping Monica](else:)[ - ???]](else:)[(if:$RanchSleepTwo is true)[ - Monica is sleeping](else:)[ - ???]]
+(if:$StoppedHorseNapping is false)[(if:$RanchNapping is true)[ - Swab Ball is horsenapping Monica](else:)[ - ???]](else:)[(if:$RanchSleepTwo is true)[ - Monica is sleeping](else:)[ - ???]]
 
 Trail:
 
-(if:$TrailAbe is true)[ - Abraham is looking for the missing chickens (A horseshoe)](else:)[ - ???]
+(if:$TrailAbe is true)[ - Abraham is searching for chickens (Horseshoe)](else:)[ - ???]
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3825,21 +3825,22 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="65" name="11:00pm" tags="" position="150,475" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;10:00pm&quot;)[(go-to:&quot;10:00pm&quot;)] 
+(link:&quot;10:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;10:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **11:00pm** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;12:00am&quot;)[(go-to:&quot;12:00am&quot;)]
+(link:&quot;12:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;12:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonClean is true)[Samson is cleaning the saloon](else:)[???] and (if:$SaloonPassed is true)[Cassi is passed out at the table (Key)](else:)[???]
+(if:$SaloonClean is true)[Samson is cleaning the saloon](else:)[???](link:&quot;\n&quot;)[]
+(if:$SaloonPassed is true)[Cassi is passed out at the table (Key)](else:)[???]
 
 Street:
 
-(if:$StreetHatTwo is true)[ - Swab Ball John&#39;s fourth rambling (3 rare dragon scales?)](else:)[ - ???]
+(if:$StreetHatTwo is true)[ - Swab Ball John&#39;s fourth rambling ](else:)[ - ???]
 
 Ranch:
 
@@ -3847,11 +3848,11 @@ Ranch:
 
 Trail:
 
-(if:$TrailWarningTwo is true)[ - Swab Ball Johnson is warning about the trail](else:)[ - ???]
+(if:$TrailWarningTwo is true)[ - Swab Ball is warning about the trail](else:)[ - ???]
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3870,13 +3871,13 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="66" name="12:00am" tags="" position="275,475" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;11:00pm&quot;)[(go-to:&quot;11:00pm&quot;)] 
+(link:&quot;11:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;11:00pm&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **12:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;1:00am&quot;)[(go-to:&quot;1:00am&quot;)]
+(link:&quot;1:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;1:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3892,11 +3893,11 @@ Ranch:
 
 Trail:
 
-(if:$TrailWarningTwo is true)[ - Swab Ball Johnson is warning about the trail](else:)[ - ???]
+(if:$TrailWarningTwo is true)[ - Swab Ball is warning about the trail](else:)[ - ???]
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3916,13 +3917,13 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="67" name="1:00am" tags="" position="400,475" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;12:00am&quot;)[(go-to:&quot;12:00am&quot;)] 
+(link:&quot;12:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;12:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **1:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;2:00am&quot;)[(go-to:&quot;2:00am&quot;)]
+(link:&quot;2:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;2:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3938,11 +3939,11 @@ Ranch:
 
 Trail:
 
-(if:$TrailWarningTwo is true)[ - Swab Ball Johnson is warning about the trail](else:)[ - ???]
+(if:$TrailWarningTwo is true)[ - Swab Ball is warning about the trail](else:)[ - ???]
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -3962,13 +3963,13 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="68" name="2:00am" tags="" position="525,475" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;1:00am&quot;)[(go-to:&quot;1:00am&quot;)] 
+(link:&quot;1:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;1:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **2:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;3:00am&quot;)[(go-to:&quot;3:00am&quot;)]
+(link:&quot;3:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;3:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -3976,7 +3977,7 @@ Saloon:
 
 Street:
 
-(if:$StreetFifth is true)[ - Swab Ball John&#39;s fifth rambling (Choice?)](else:)[ - ???]
+(if:$StreetFifth is true)[ - Swab Ball John&#39;s fifth rambling ](else:)[ - ???]
 
 Ranch:
 
@@ -3988,7 +3989,7 @@ Trail:
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -4001,20 +4002,21 @@ Gunsmith:
 
 Sherriff:
 
-(if:$SherriffSleep is true)[ - Abraham is keeping himself awake](else:)[ - ???] and (if:$SherriffHat is true)[ - Pat is delivering a hat (Hat)](else:)[ - ???]
+(if:$SherriffSleep is true)[ - Abraham is keeping himself awake](else:)[ - ???](link:&quot;\n&quot;)[]
+(if:$SherriffHat is true)[ - Pat is delivering a hat (Hat)](else:)[ - ???]
 
 Hat Shop:
 
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="69" name="3:00am" tags="" position="25,600" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;2:00am&quot;)[(go-to:&quot;2:00am&quot;)] 
+(link:&quot;2:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;2:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **3:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;4:00am&quot;)[(go-to:&quot;4:00am&quot;)]
+(link:&quot;4:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;4:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -4034,7 +4036,7 @@ Trail:
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -4054,13 +4056,13 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="70" name="4:00am" tags="" position="150,600" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;3:00am&quot;)[(go-to:&quot;3:00am&quot;)] 
+(link:&quot;3:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;3:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **4:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;5:00am&quot;)[(go-to:&quot;5:00am&quot;)]
+(link:&quot;5:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;5:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -4080,7 +4082,7 @@ Trail:
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -4100,13 +4102,13 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="71" name="5:00am" tags="" position="275,600" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;4:00am&quot;)[(go-to:&quot;4:00am&quot;)] 
+(link:&quot;4:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;4:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **5:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;6:00am&quot;)[(go-to:&quot;6:00am&quot;)]
+(link:&quot;6:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;6:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
@@ -4114,7 +4116,7 @@ Saloon:
 
 Street:
 
-(if:$StreetSixth is true)[ - Swab Ball John&#39;s sixth rambling (Uncertainty about trees?)](else:)[ - ???]
+(if:$StreetSixth is true)[ - Swab Ball John&#39;s sixth rambling](else:)[ - ???]
 
 Ranch:
 
@@ -4126,7 +4128,7 @@ Trail:
 
 Inn:
 
-(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (egg)](else:)[ - ???]
+(if:$InnJeremiah is true)[ - Jeremiah is trying to sleep (Egg)](else:)[ - ???]
 &lt;p class=&quot;right-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Alleyway:
 
@@ -4146,17 +4148,17 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="72" name="6:00am" tags="" position="400,600" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;5:00am&quot;)[(go-to:&quot;5:00am&quot;)] 
+(link:&quot;5:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;5:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **6:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;7:00am&quot;)[(go-to:&quot;7:00am&quot;)]
+(link:&quot;7:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;7:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonBoulevardier is true)[ - Samson is serving a boulevardier](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonSwab is true)[ - Swab Ball Johnson is asleep](else:)[ - ???]
+(if:$SaloonBoulevardier is true)[ - Samson is serving a boulevardier (Drink)](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonSwab is true)[ - Swab Ball Johnson is asleep](else:)[ - ???]
 
 Street:
 
@@ -4164,7 +4166,7 @@ Street:
 
 Ranch:
 
-(if:$RanchRest is true)[ - Jeremiah is resting on a haystack (egg)](else:)[ - ???]  (if:$StoppedHorseNapping is true)[(if:$RanchConsume is true)[(link:&quot;\n&quot;)[] - Monica shall consume](else:)[ - ???]]
+(if:$RanchRest is true)[ - Jeremiah is resting on a haystack (Egg)](else:)[ - ???]  (if:$StoppedHorseNapping is true)[(if:$RanchConsume is true)[(link:&quot;\n&quot;)[] - Monica shall consume](else:)[ - ???]]
 
 Trail:
 
@@ -4192,17 +4194,17 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="73" name="7:00am" tags="" position="525,600" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;6:00am&quot;)[(go-to:&quot;6:00am&quot;)] 
+(link:&quot;6:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;6:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **7:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;8:00am&quot;)[(go-to:&quot;8:00am&quot;)]
+(link:&quot;8:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;8:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonBoulevardier is true)[ - Samson is serving a boulevardier](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonSwab is true)[ - Swab Ball Johnson is asleep](else:)[ - ???]
+(if:$SaloonBoulevardier is true)[ - Samson is serving a boulevardier (Drink)](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonSwab is true)[ - Swab Ball Johnson is asleep](else:)[ - ???]
 
 Street:
 
@@ -4210,7 +4212,7 @@ Street:
 
 Ranch:
 
-(if:$RanchRest is true)[ - Jeremiah is resting on a haystack (egg)](else:)[ - ???]  (if:$StoppedHorseNapping is true)[(link:&quot;\n&quot;)[](if:$RanchConsume is true)[ - Monica shall consume](else:)[ - ???]]
+(if:$RanchRest is true)[ - Jeremiah is resting on a haystack (Egg)](else:)[ - ???]  (if:$StoppedHorseNapping is true)[(link:&quot;\n&quot;)[](if:$RanchConsume is true)[ - Monica shall consume](else:)[ - ???]]
 
 Trail:
 
@@ -4238,25 +4240,25 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="74" name="8:00am" tags="" position="25,725" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;7:00am&quot;)[(go-to:&quot;7:00am&quot;)] 
+(link:&quot;7:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;7:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **8:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;9:00am&quot;)[(go-to:&quot;9:00am&quot;)]
+(link:&quot;9:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;9:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonSleep is true)[ - Samson is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonFinger is true)[ - Deadeye Dan is lurking in the corner (Middle finger)](else:)[ - ???]
+(if:$SaloonSleep is true)[ - Samson is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonFinger is true)[ - Dan is lurking in the corner (Finger)](else:)[ - ???]
 
 Street:
 
-(if:$StreetSeventh is true)[ - Swab Ball John&#39;s seventh rambling (A mythical sky chicken companion?)](else:)[ - ???]
+(if:$StreetSeventh is true)[ - Swab Ball John&#39;s seventh rambling](else:)[ - ???]
 
 Ranch:
 
-(if:$RanchRest is true)[ - Jeremiah is resting on a haystack (egg)](else:)[ - ???] (if:$StoppedHorseNapping is true)[(link:&quot;\n&quot;)[](if:$RanchConsume is true)[ - Monica shall consume](else:)[ - ???]]
+(if:$RanchRest is true)[ - Jeremiah is resting on a haystack (Egg)](else:)[ - ???] (if:$StoppedHorseNapping is true)[(link:&quot;\n&quot;)[](if:$RanchConsume is true)[ - Monica shall consume](else:)[ - ???]]
 
 Trail:
 
@@ -4284,21 +4286,21 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="75" name="9:00am" tags="" position="150,725" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;8:00am&quot;)[(go-to:&quot;8:00am&quot;)] 
+(link:&quot;8:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;8:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **9:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;10:00am&quot;)[(go-to:&quot;10:00am&quot;)]
+(link:&quot;10:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;10:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonSleep is true)[ - Samson is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonFinger is true)[ - Deadeye Dan is lurking in the corner (Middle finger)](else:)[ - ???]
+(if:$SaloonSleep is true)[ - Samson is asleep](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonFinger is true)[ - Dan is lurking in the corner (Finger)](else:)[ - ???]
 
 Street:
 
-(if:$StreetClear is true)[ - Jeremiah is cleaning the street (egg)](else:)[ - ???]
+(if:$StreetClear is true)[ - Jeremiah is cleaning the street (Egg)](else:)[ - ???]
 
 Ranch:
 
@@ -4306,7 +4308,7 @@ Ranch:
 
 Trail:
 
-(if:$TrailWarningThree is true)[ - Swab Ball Johnson is warning about the trail](else:)[ - ???]
+(if:$TrailWarningThree is true)[ - Swab Ball is warning about the trail](else:)[ - ???]
 
 Inn:
 
@@ -4330,21 +4332,21 @@ Hat Shop:
 (if:$HatNobody is true)[ - Nobody is around (Tumbleweed)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="76" name="10:00am" tags="" position="275,725" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;9:00am&quot;)[(go-to:&quot;9:00am&quot;)] 
+(link:&quot;9:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;9:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **10:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;11:00am&quot;)[(go-to:&quot;11:00am&quot;)]
+(link:&quot;11:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;11:00am&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonSpecial is true)[ - Samson is serving a Samson Special (Drink)](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonFinger is true)[ - Deadeye Dan is lurking in the corner (Middle finger)](else:)[ - ???]
+(if:$SaloonSpecial is true)[ - Samson is serving his special (Drink)](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonFinger is true)[ - Dan is lurking in the corner (Middle finger)](else:)[ - ???]
 
 Street:
 
-(if:$StreetClear is true)[ - Jeremiah is cleaning the street (egg)](else:)[ - ???]
+(if:$StreetClear is true)[ - Jeremiah is cleaning the street (Egg)](else:)[ - ???]
 
 Ranch:
 
@@ -4352,7 +4354,7 @@ Ranch:
 
 Trail:
 
-(if:$TrailWarningThree is true)[ - Swab Ball Johnson is warning about the trail](else:)[ - ???]
+(if:$TrailWarningThree is true)[ - Swab Ball is warning about the trail](else:)[ - ???]
 
 Inn:
 
@@ -4376,17 +4378,17 @@ Hat Shop:
 (if:$HatClose is true)[ - Pat is forging new hats (Hat)](else:)[ - ???]
 </tw-passagedata><tw-passagedata pid="77" name="11:00am" tags="" position="400,725" size="100,100">&lt;img src=&quot;Images/Book.png&quot; class=&quot;map-background&quot; width=&quot;1800&quot; height=&quot;1000&quot;&gt;
 &lt;p class=&quot;notebook-map&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
-(link:&quot;Map&quot;)[(go-to:&quot;Map&quot;)]
+(link:&quot;Back&quot;)[(go-to:&quot;GoHome&quot;)]
 &lt;p class=&quot;left-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;10:00am&quot;)[(go-to:&quot;10:00am&quot;)] 
+(link:&quot;10:00am&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;10:00am&quot;)] 
 &lt;p class=&quot;notebook-time&quot; style=&quot;font-family:kirsty;font-size:50px&quot;&gt;
 **11:00am** 
 &lt;p class=&quot;right-notebook-button&quot; style=&quot;font-family:kirsty;font-size:40px&quot;&gt;
-(link:&quot;12:00pm&quot;)[(go-to:&quot;12:00pm&quot;)]
+(link:&quot;12:00pm&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(go-to:&quot;12:00pm&quot;)]
 &lt;p class=&quot;left-notebook&quot; style=&quot;font-family:kirsty;font-size:29px&quot;&gt;
 Saloon:
 
-(if:$SaloonSpecial is true)[ - Samson is serving a Samson Special (Drink)](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonFinger is true)[ - Deadeye Dan is lurking in the corner (Middle finger)](else:)[ - ???]
+(if:$SaloonSpecial is true)[ - Samson is serving a his special (Drink)](else:)[ - ???](link:&quot;\n&quot;)[](if:$SaloonFinger is true)[ - Dan is lurking in the corner (Finger)](else:)[ - ???]
 
 Street:
 
@@ -4420,7 +4422,8 @@ Sherriff:
 Hat Shop:
 
 (if:$HatClose is true)[ - Pat is forging new hats (Hat)](else:)[ - ???]
-</tw-passagedata><tw-passagedata pid="78" name="GoToMap" tags="" position="525,725" size="100,100">(if:$Timepassed is 0)[(go-to:&quot;12:00pm&quot;)]
+</tw-passagedata><tw-passagedata pid="78" name="GoToMap" tags="" position="525,725" size="100,100">(track: &#39;map&#39;, &#39;playwhenpossible&#39;)
+(if:$Timepassed is 0)[(go-to:&quot;12:00pm&quot;)]
 (if:$Timepassed is 1)[(go-to:&quot;1:00pm&quot;)]
 (if:$Timepassed is 2)[(go-to:&quot;2:00pm&quot;)]
 (if:$Timepassed is 3)[(go-to:&quot;3:00pm&quot;)]
@@ -4454,7 +4457,17 @@ Hat Shop:
 (track: &#39;truth&#39;, &#39;play&#39;)(track: &#39;truth&#39;, &#39;loop&#39;, true)|TheSun3&gt;[You’re compelled by your legally binding contract to go to the main road and before you know it you’re there.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?TheSun2)(hide:?TheSun3)]]|TheSun2)[&lt;div class=&quot;slow-fade-in&quot;&gt;&lt;img src=&quot;Images/Abraham1.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;&#39;&#39;Sheriff Abraham:&#39;&#39;&#39;&#39; What in tarnations is that?(link:&quot;\n\n &gt;Monica&quot;)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?TheSun)(hide:?TheSun2)]]|TheSun)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=&quot;Images/Abraham1.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;Deadeye Dan:&#39;&#39; LET&#39;S JUST GET ON WITH THE DUEL!.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?DeadeyeDans)(hide:?TheSun)]]|DeadeyeDans)[&lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Abraham1.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-out&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &#39;&#39;&#39;&#39;Sheriff Abraham:&#39;&#39;&#39;&#39; Sorry Dan, but I gotta dely this duel. I want to investigate this horse.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?SOYER)(hide:?DeadeyeDans)]]|SoYer)[&lt;div class=&quot;fade-out&quot;&gt;&lt;img src=&quot;Images/Abraham1.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt; &lt;div class=&quot;fade-in&quot;&gt;&lt;img src=&quot;Images/Dan2.png&quot; class=&quot;fade-character&quot; width=&quot;500&quot; height=&quot;600&quot;/&gt;&lt;/div&gt;&#39;&#39;Deadeye Dan:&#39;&#39; I DON&#39;T CARE ABOUT THAT HORSE, I JUST WANT TO SHOOT HIM.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?IUh)(hide:?SOYER)]]|IUh)[You command Monica to obliterate Dan(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?FineThen)(hide:?IUh)]]|FineThen)[Monica charges towrds Dan, before triping on some tumbleweed and falling face first on the ground.(click:?page)[(track: &#39;click&#39;, &#39;playwhenpossible&#39;)(show:?NoonSoon)(hide:?FineThen)]]|NoonSoon)[You look back to Dan right before he pulls the trigger.(click:?page)[(track: &#39;shot&#39;, &#39;playwhenpossible&#39;)(show:?Crin)(hide:?NoonSoon)]]|Crin)[He then shoots Monica in the face(click:?page)[(track: &#39;shot&#39;, &#39;playwhenpossible&#39;)(hide:?Crin)(go-to:&quot;LoseScreen&quot;)]]
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;!--| || || |_--&gt;</tw-passagedata></tw-storydata>
+&lt;!--| || || |_--&gt;</tw-passagedata><tw-passagedata pid="80" name="GoHome" tags="" position="650,725" size="100,100">(track: &#39;map&#39;, &#39;playwhenpossible&#39;)
+(if:$LastVisited is 1)[(go-to:&quot;Street&quot;)]
+(else-if:$LastVisited is 2)[(go-to:&quot;HatShop&quot;)]
+(else-if:$LastVisited is 3)[(go-to:&quot;Trail&quot;)]
+(else-if:$LastVisited is 4)[(go-to:&quot;Saloon&quot;)]
+(else-if:$LastVisited is 5)[(go-to:&quot;Ranch&quot;)]
+(else-if:$LastVisited is 6)[(go-to:&quot;Inn&quot;)]
+(else-if:$LastVisited is 7)[(go-to:&quot;Sheriff&quot;)]
+(else-if:$LastVisited is 9)[(go-to:&quot;Alleyway&quot;)]
+(else-if:$LastVisited is 10)[(go-to:&quot;Gunshop&quot;)]
+(else:)[(go-to:&quot;Map&quot;)]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
